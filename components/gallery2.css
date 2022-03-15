@@ -1,0 +1,30 @@
+body {
+  background: #ddd;
+}
+
+#gallery {
+  columns: 5 200px;
+  column-gap: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#gallery figure {
+  margin: 0 0;
+  width: 100%;
+  background: #fff;
+  padding: 0;
+  /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); */
+}
+
+#gallery figure img {
+  width: 100%;
+}
+
+#gallery figcaption {
+  display: none;
+}
+
+a img {
+  vertical-align: bottom;
+}
