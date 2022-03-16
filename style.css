@@ -1,0 +1,64 @@
+body nav {
+    background-color: #127369;
+}
+body nav ul li {
+    list-style-type: none;
+    display: block;
+    margin: 10px;
+}
+li.square {
+        width: 30px;
+        height: 30px;
+        background: #6ca8a2;
+        
+}
+li.circle {
+    width: 30px;
+    height: 30px;
+    background: #6ca8a2;
+    border-radius: 50%
+}
+li.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    border-top: 30px solid #6ca8a2;
+}
+body nav ul {
+    display: flex;
+    float: right;
+}
+body {
+    background-color: #3a3b3c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+
+}
+#maximAdejumo {
+    background-image: url("/Users/burakiloglu/Documents/Projects/PortfolioWebsite/ProjectOne1.webp");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.7;
+    padding-bottom: 100%;
+    font-size: 50px;
+}
+section {
+    height: calc(100% - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+#maximAdejumo h1:hover {
+    color: #127369;
+}
