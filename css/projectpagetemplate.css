@@ -1,0 +1,103 @@
+.like-button-box {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px, 5vw;
+}
+
+.project-page-grid{
+    display: grid;
+    grid-template-columns: 1, 1, 1, 1;
+    grid-template-rows: 1, 1, 1, 1;
+    gap: 2px;
+}
+
+.ppg-pic1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.ppg-pic2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.ppg-pic3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.ppg-pic4{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.ppg-pic5{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.ppg-pic6{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.ppg-pic7{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.ppg-pic8{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.ppg-pic9{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.ppg-pic10{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.ppg-pic{
+    grid-column-start: ;
+    grid-column-end: ;
+    grid-row-start: ;
+    grid-row-end: ;
+}
+
+.show-gallery-button-box{
+    display: flex;
+    justify-content: center;
+}
+.show-gallery-button-box p {
+    padding: 1em, 2em;
+    border: 1px; solid black;
+    margin: 1em;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
