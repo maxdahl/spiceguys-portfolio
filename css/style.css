@@ -4,3 +4,22 @@
   --heading-color: #e4e6eb;
   --accent-color: #127369;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+}
+
+a {
+  color: var(--body-text-color);
+}
