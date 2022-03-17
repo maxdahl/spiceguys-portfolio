@@ -25,7 +25,7 @@ main {
 
 .gallery-3 {
   display: grid;
-  grid-template-rows: calc(40vh - 83px) calc(30vh - 83px) calc(30vh - 83px);
+  grid-template-rows: calc(40vh - 60px) calc(30vh - 60px) calc(30vh - 60px);
   row-gap: var(--gap-size);
   height: auto;
 }
@@ -46,8 +46,29 @@ main {
 
 .gallery-header {
   height: 80px;
-  margin: 40px 0 32px 0;
+  padding: 80px 0 0px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+    filter: hue-rotate(180deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: hue-rotate(0);
+  }
+}
+
+.gallery img {
+  animation: fadein 700ms ease-out;
 }
