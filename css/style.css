@@ -4,3 +4,28 @@
   --heading-color: #e4e6eb;
   --accent-color: #127369;
 }
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-color);
+  font-family: "Roboto";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+}
+
+a {
+  color: var(--body-text-color);
+}
