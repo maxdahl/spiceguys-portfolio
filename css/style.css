@@ -1,5 +1,6 @@
 :root {
   --bg-color: #3a3b3c;
+  --bg-color-2: #242526;
   --body-text-color: #b0b3b8;
   --heading-color: #e4e6eb;
   --accent-color: #127369;
@@ -63,19 +64,19 @@ button.scroll-right-button {
   top: 50%;
   background: #fff;
   position: absolute;
-  content: "<";
   border-radius: 30px;
   width: 40px;
   height: 40px;
   text-align: center;
   margin: 10px;
   opacity: 0.2;
+  z-index: 0;
+  overflow: visible;
 }
 
 button.scroll-right-button {
   top: 50%;
   right: 0;
-  content: ">";
 }
 
 button.scroll-right-button:hover,
