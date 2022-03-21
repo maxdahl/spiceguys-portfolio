@@ -1,0 +1,55 @@
+.aboutMaxim {
+  height: 90vh;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.aboutLLP {
+  height: 100vh;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 90px;
+}
+h2 {
+  text-align: center;
+  font-size: 32px;
+  font-family: "Lora";
+}
+.aboutMaxim p {
+  text-align: center;
+  color: #b0b3b8;
+  font-size: 32px;
+}
+
+.aboutLLP p {
+  text-align: center;
+  color: #b0b3b8;
+  font-size: 32px;
+}
+
+.imgMaxim {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 25px;
+  width: 60vw;
+  margin-left: 20vw;
+}
+
+img.big {
+  grid-row: span 2;
+  grid-column: span 2;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+img.small {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}

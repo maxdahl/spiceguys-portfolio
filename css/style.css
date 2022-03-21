@@ -6,15 +6,29 @@
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+
+  font-family: "WorkSans";
+  src: url(../fonts/WorkSans-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url(../fonts/Lora-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url(../fonts/OpenSans-Regular.ttf) format("truetype");
+
 }
 
 body {
   margin: 0;
   padding: 0;
   background: var(--bg-color);
-  font-family: "Roboto";
+
+  font-family: "Work Sans";
+
 }
 
 h1,
@@ -29,6 +43,20 @@ h6 {
 a {
   color: var(--body-text-color);
 }
+
+
+h1 {
+  font-family: "WorkSans";
+  line-height: 10px;
+}
+
+h2 {
+  font-family: "Lora";
+  line-height: 20px;
+}
+
+p {
+  font-family: "OpenSans";}
 
 button.scroll-left-button,
 button.scroll-right-button {
@@ -73,4 +101,5 @@ button.scroll-left-button:hover {
 * DESKTOP *
 ***********/
 @media (min-aspect-ratio: 1/1) {
+
 }
