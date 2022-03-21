@@ -29,3 +29,48 @@ h6 {
 a {
   color: var(--body-text-color);
 }
+
+button.scroll-left-button,
+button.scroll-right-button {
+  top: 50%;
+  background: #fff;
+  position: absolute;
+  content: "<";
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin: 10px;
+  opacity: 0.2;
+}
+
+button.scroll-right-button {
+  top: 50%;
+  right: 0;
+  content: ">";
+}
+
+button.scroll-right-button:hover,
+button.scroll-left-button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/***********
+* MOBILE *
+***********/
+@media (max-aspect-ratio: 1/1) {
+  .no-mobile {
+    display: none;
+  }
+}
+
+/***********
+* DESKTOP *
+***********/
+@media (min-aspect-ratio: 1/1) {
+}

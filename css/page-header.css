@@ -1,6 +1,9 @@
 header {
   display: grid;
   grid-template-rows: 24px 56px;
+
+  position: fixed;
+  width: 100%;
 }
 
 header #systembar {
@@ -20,6 +23,7 @@ nav {
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   padding: 0 1rem;
+  background: var(--bg-color);
 }
 
 #nav-icon {
