@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/page-header.css" />
     <link rel="stylesheet" href="./css/gallery.css" />
+
+    <link rel="stylesheet" href="./css/page-header.css" />
+    <link rel="stylesheet" href="./css/hamburger-menu.css" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -18,7 +20,7 @@
     -->
     <header>
       <div id="systembar"></div>
-      <nav>
+      <div id="header-menu">
         <div id="nav-icon" class="icon">
           <span></span>
           <span></span>
@@ -32,8 +34,27 @@
         <div id="contact-link">
           <a href="#">contact</a>
         </div>
+      </div>
+
+      <nav>
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <span>Projects</span>
+              <ul>
+                <li><a href="">Project 1</a></li>
+                <li><a href="">Project 2</a></li>
+                <li><a href="">Project 3</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
+
     <!--
       ********************************
       * PAGE HEADER END
