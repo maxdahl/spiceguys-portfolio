@@ -27,12 +27,12 @@ function onActiveElementChange(newElement, oldElement) {
   } else {
     oldElement
       .querySelector(`${scrollTargetSelector}.hst-${lastTargetNum}`)
-      ?.classList.toggle("hidden");
+      ?.classList.add("hidden");
 
+    lastTargetNum = 1;
     newElement
       .querySelector(`${scrollTargetSelector}.hst-${lastTargetNum}`)
-      ?.classList.toggle("hidden");
-    lastTargetNum = 1;
+      ?.classList.remove("hidden");
   }
 }
 
@@ -55,7 +55,11 @@ function scrollHorizontal(e) {
   if (e.deltaY < 0) {
     if (lastTargetNum > 1) lastTargetNum -= 1;
   } else {
-    if (lastTargetNum < targets.length) lastTargetNum += 1;
+    if (
+      lastTargetNum <
+      activeElement.getElement().querySelectorAll(scrollTargetSelector).length
+    )
+      lastTargetNum += 1;
   }
 
   const target = activeElement

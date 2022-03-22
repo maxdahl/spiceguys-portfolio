@@ -91,8 +91,8 @@
     -->
 
     <main>
-      <button class="scroll-left-button no-mobile"><</button>
       <div class="v-scrolltarget" id="vst-1">
+        <button class="scroll-left-button no-mobile"><</button>
         <div class="gallery mobile-gallery-1 h-scrolltarget-mob hst-1">
           <div class="gallery-w">
             <img
@@ -228,6 +228,7 @@
             />
           </div>
         </div>
+        <button class="scroll-right-button no-mobile">></button>
       </div>
 
       <div class="v-scrolltarget" id="vst-2">
@@ -325,13 +326,25 @@
       </div>
 
       <div class="v-scrolltarget" id="vst-4">
+        <button class="scroll-left-button no-mobile"><</button>
+
         <div class="gallery-header">
           <h2>Videography</h2>
         </div>
-        <div class="gallery mobile-gallery-4"></div>
-        <div class="gallery desktop-gallery-4"></div>
+
+        <div class="gallery mobile-gallery-4 h-scrolltarget-mob hst-1"></div>
+        <div class="gallery desktop-gallery-4 h-scrolltarget-deskt hst-1"></div>
+
+        <div
+          class="gallery mobile-gallery-4 h-scrolltarget-mob hst-2"
+          style="background: var(--accent-color)"
+        ></div>
+        <div
+          class="gallery desktop-gallery-4 h-scrolltarget-deskt hst-2"
+          style="background: var(--accent-color)"
+        ></div>
+        <button class="scroll-right-button no-mobile">></button>
       </div>
-      <button class="scroll-right-button no-mobile">></button>
     </main>
     <!--
       ********************************
