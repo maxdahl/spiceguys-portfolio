@@ -38,3 +38,5 @@ window.onload = function(){
         document.querySelector('section').className += " doneAnimation";
     }, 3000);
 }
+
+window.setTimeout("document.getElementById('pictureAde').style.display='none';", 3000)
