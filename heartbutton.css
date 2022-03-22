@@ -1,0 +1,13 @@
+html {
+    background-color: #3a3b3c;
+}
+
+.heartButtonMobile {
+    font-size:48px;
+    color: #400106;
+    }
+.heartButtonMobile:hover {
+    font-size:48px;
+    background-color: aquamarine;
+    color: white;
+}
