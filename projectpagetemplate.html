@@ -8,16 +8,24 @@
     <link rel="stylesheet" type="text/css" href="css/style.css"></style>
     <link rel="stylesheet" type="text/css" href="css/layout.css"></style>
     <link rel="stylesheet" type="text/css" href="css/projectpagetemplate.css"></style>
+    <script src="js/projectpagetemplate.js" defer></script>
 </head>
 
 
 
 <body>
+
+    <!-- HERO IMAGE (WITH LIKE BUTTON) -->
     <div class="heroimage-container">  <img class="heroimage" src="images/dummypic.jpg" />  </div>
     <div class="like-button-box"> IMAGE OF A HEART BUTTON </div>
+
+    <!-- TOP SECTION TEXT -->
     <h1 class="project-page-heading1">Portriture - Rico</h1>
     <p class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
+
+
+    <!-- PICTURE GRID -->
     <div class="project-page-grid">
         <div class="ppg-pic1"> <img src="images/dummypic.jpg" /></div>
         <div class="ppg-pic2"> <img src="images/dummypic.jpg" /></div>
@@ -37,17 +45,29 @@
         <img class="ppg-pic9" src="images/dummypic.jpg" />
         <img class="ppg-pic10" src="images/dummypic.jpg" /> -->
     </div>
+
+
+    <!-- SLIDER GALLERY -->
+
+
+    <!-- BUTTON -->
     <div class="show-gallery-button-box"> <button onclick="turnOnOverlay()">Show Gallery</button> </div>
     <!-- alternatively: use a button from MATERIAL package. https://material.io/components/buttons/web
     Installed package.
     Nothing imported so far.
     Commented out dependency in package.json -->
 
-    <div id="overlay"></div>
+    <!-- OVERLAY -->
+    <div id="overlayOverProjectViewPage"><img id="pictureInSliderGalleryProjectPage" src="" alt="A Picture in a Slider Gallery"></div>
+
+
+    <!-- TEXT SECTION 1 -->
     <h1 class="project-page-heading1">Portriture - Rico</h1>
     <h2 class="project-page-heading2">Portriture - Rico</h2>
     <p class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
+
+    <!-- BOTTOM PICTURE SECTION -->
     <div class="project-page-bottom-gallery-container">
         <!-- <div class="ppg-bottom-pic-container"></div> -->
         <div class=""> <img src="images/dummypic.jpg" /></div>
@@ -58,16 +78,14 @@
 
 
 
-    
+    <!-- FOOTER -->
     <div class="footer"></div>
+
 
     <script>
         function turnOnOverlay() {
-            document.getElementById("overlay").style.display = "block";    
-        }
-        function turnOffOverlay() {
-            document.getElementById("overlay").style.display = "none";
-        } 
+    document.getElementById("overlayOverProjectViewPage").style.display = "block";    
+}
     </script>
     
 </body>
