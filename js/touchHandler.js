@@ -48,6 +48,13 @@ class TouchHandler {
     this.eventHandlers[direction].delete(handler);
   }
 
+  resetMovement() {
+    instance.touchstart.x = 0;
+    instance.touchstart.y = 0;
+    instance.touchmove.x = 0;
+    instance.touchmove.y = 0;
+  }
+
   onTouch(e) {
     switch (e.type) {
       case "touchstart":
@@ -57,6 +64,9 @@ class TouchHandler {
         break;
 
       case "touchend":
+        //we assume a click and proceed with original event
+        if (instance.touchmove.x < 10 || instance.touchmove.y < 10) return true;
+
         const xMovement = Math.abs(
           instance.touchmove.x - instance.touchstart.x
         );
@@ -85,6 +95,8 @@ class TouchHandler {
             });
           }
         }
+
+        instance.resetMovement();
     }
   }
 }
