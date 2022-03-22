@@ -1,0 +1,46 @@
+#action-btn {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  opacity: 0.5;
+}
+
+#action-btn:hover {
+  opacity: 1;
+}
+
+div#social-icons {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  right: 0;
+  bottom: 0;
+}
+
+div#social-icons > span {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: 1px solid var(--accent-color);
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+div#social-icons > span:first-child {
+  right: 65px;
+  bottom: 5px;
+}
+
+div#social-icons > span:nth-child(2) {
+  right: 60px;
+  bottom: 45px;
+}
+
+div#social-icons > span:nth-child(3) {
+  right: 30px;
+  bottom: 70px;
+}
+
+div#social-icons > span img {
+  max-width: 100%;
+}
