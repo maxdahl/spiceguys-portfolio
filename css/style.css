@@ -1,14 +1,31 @@
 :root {
   --bg-color: #3a3b3c;
+  --bg-color-2: #242526;
   --body-text-color: #b0b3b8;
   --heading-color: #e4e6eb;
   --accent-color: #127369;
+}
+
+@font-face {
+  font-family: "WorkSans";
+  src: url(../fonts/WorkSans-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url(../fonts/Lora-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url(../fonts/OpenSans-Regular.ttf) format("truetype");
 }
 
 body {
   margin: 0;
   padding: 0;
   background: var(--bg-color);
+  font-family: "WorkSans";
 }
 
 h1,
@@ -22,4 +39,97 @@ h6 {
 
 a {
   color: var(--body-text-color);
+}
+
+h1 {
+  font-family: "WorkSans";
+  line-height: 10px;
+}
+
+h2 {
+  font-family: "Lora";
+  line-height: 20px;
+}
+
+p {
+  font-family: "OpenSans";
+}
+
+button.scroll-left-button,
+button.scroll-right-button {
+  top: 50%;
+  background: #fff;
+  position: absolute;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin: 10px;
+  opacity: 0.2;
+  z-index: 0;
+  overflow: visible;
+}
+
+button.scroll-right-button {
+  top: 50%;
+  right: 0;
+}
+
+button.scroll-right-button:hover,
+button.scroll-left-button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+    filter: hue-rotate(180deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: hue-rotate(0);
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+    transform: scale(1);
+    filter: hue-rotate(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.3);
+    filter: hue-rotate(180deg);
+  }
+}
+
+.fadein {
+  animation: fadein 700ms ease-out;
+}
+
+.fadeout {
+  animation: fadeout 700ms ease-out;
+}
+/***********
+* MOBILE *
+***********/
+@media (max-aspect-ratio: 1/1) {
+  .no-mobile {
+    display: none;
+  }
+}
+
+/***********
+* DESKTOP *
+***********/
+@media (min-aspect-ratio: 1/1) {
 }

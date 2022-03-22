@@ -4,10 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spicy Portfolio</title>
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="./page-header.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
+    <link rel="stylesheet" href="./css/page-header.css" />
+    <link rel="stylesheet" href="./css/hamburger-menu.css" />
+    <link rel="stylesheet" href="./css/actionbtn.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
   </head>
   <body>
     <!--
@@ -17,7 +28,7 @@
     -->
     <header>
       <div id="systembar"></div>
-      <nav>
+      <div id="header-menu">
         <div id="nav-icon" class="icon">
           <span></span>
           <span></span>
@@ -31,14 +42,364 @@
         <div id="contact-link">
           <a href="#">contact</a>
         </div>
+      </div>
+
+      <nav>
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+
+            <li class="submenu collapsed">
+              <span>Projects</span>
+
+              <ul>
+                <li class="submenu collapsed">
+                  <span>Portriture</span>
+                  <ul>
+                    <li><a href="">Red Hair Guy</a></li>
+                  </ul>
+                </li>
+
+                <li class="submenu collapsed">
+                  <span>Concert Photography</span>
+                </li>
+
+                <li><a href="">Self Portraits</a></li>
+
+                <li class="submenu collapsed">
+                  <span>Videography</span>
+                </li>
+              </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
+
     <!--
       ********************************
       * PAGE HEADER END
       ********************************
     -->
 
+    <!--
+      ********************************
+      * PAGE MAIN START
+      ********************************
+    -->
+
+    <main>
+      <div class="v-scrolltarget" id="vst-1">
+        <button class="scroll-left-button no-mobile"><</button>
+        <div class="gallery mobile-gallery-1 h-scrolltarget-mob hst-1">
+          <div class="gallery-w">
+            <img
+              src="./img/photos/portraet/red_hair_guy/Red_hair_-9_cropped.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="gallery-m">
+            <img src="./img/photos/portraet/CLAU/CLAU_025.jpg" alt="" />
+            <img
+              src="./img/photos/portraet/GENERVA/Generva_high_res-12_tif_cropped.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="gallery-w">
+            <img src="./img/photos/portraet/HUGH/IMG_0562_cropped.jpg" alt="" />
+          </div>
+
+          <div class="gallery-s">
+            <img
+              src="./img/photos/portraet/LOUIS/Louis_high_res_tif_cropped.jpg"
+              alt=""
+            />
+
+            <img
+              src="./img/photos/portraet/perla_malina/Perla-malina_shoot-283_tif_cropped.jpg"
+              alt=""
+            />
+
+            <img
+              src="./img/photos/portraet/charlotte_marie/Charlotte_Marie-26.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="gallery mobile-gallery-1 h-scrolltarget-mob hst-2">
+          <div class="gallery-w">
+            <img
+              src="./img/photos/portraet/lisa_tao/Lisa_Tao_-39_cropped.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="gallery-m">
+            <img
+              src="./img/photos/portraet/marie/Marie_104_cropped.jpg"
+              alt=""
+            />
+            <img
+              src="./img/photos/portraet/gen_dan/gen-dan-6_cropped.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="gallery-w">
+            <img src="./img/photos/portraet/HUGH/IMG_0562_cropped.jpg" alt="" />
+          </div>
+
+          <div class="gallery-s">
+            <img
+              src="./img/photos/portraet/LOUIS/Louis_high_res_tif_cropped.jpg"
+              alt=""
+            />
+
+            <img
+              src="./img/photos/portraet/perla_malina/Perla-malina_shoot-283_tif_cropped.jpg"
+              alt=""
+            />
+
+            <img
+              src="./img/photos/portraet/charlotte_marie/Charlotte_Marie-26.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="gallery desktop-gallery-1 h-scrolltarget-deskt hst-1">
+          <div class="gallery-w">
+            <img
+              src="./img/photos/portraet/perla_malina/Perla-malina_shoot-283_tif_cropped.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="gallery-m">
+            <img
+              src="./img/photos/portraet/red_hair_guy/Red_hair_-9_cropped.jpg"
+              alt=""
+            />
+
+            <img src="./img/photos/portraet/HUGH/IMG_0562_cropped.jpg" alt="" />
+          </div>
+
+          <div class="gallery-s">
+            <img src="./img/photos/portraet/CLAU/CLAU_025.jpg" alt="" />
+            <img
+              src="./img/photos/portraet/GENERVA/Generva_high_res-12_tif_cropped.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="gallery desktop-gallery-1 h-scrolltarget-deskt hst-2">
+          <div class="gallery-w">
+            <img
+              src="./img/photos/portraet/lisa_tao/Lisa_Tao_-39_cropped.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="gallery-m">
+            <img
+              src="./img/photos/portraet/marie/Marie_104_cropped.jpg"
+              alt=""
+            />
+            <img
+              src="./img/photos/portraet/gen_dan/gen-dan-6_cropped.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="gallery-s">
+            <img
+              src="./img/photos/portraet/sophia/Scans_1016_cropped.jpg"
+              alt=""
+            />
+            <img
+              src="./img/photos/portraet/izzy/Maxim_21_06_19024_cropped.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <button class="scroll-right-button no-mobile">></button>
+      </div>
+
+      <div class="v-scrolltarget" id="vst-2">
+        <div class="gallery-header">
+          <h2>Concert Photography</h2>
+        </div>
+
+        <div class="gallery mobile-gallery-2">
+          <div class="gallery-w">
+            <img
+              src="./img/photos//concerts/concert-01/IMG_9454_cropped.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="gallery-m">
+            <img
+              src="./img/photos/concerts/JOUR_2/JOUR_2-2_cropped.jpg"
+              alt=""
+            />
+            <img
+              src="./img/photos/concerts/JOUR_1/JOUR_1-99_cropped.jpg"
+              alt=""
+            />
+          </div>
+          <div class="gallery-s">
+            <img
+              src="./img/photos/concerts/caleborate/Caleborate_09_04_19025.jpg"
+              alt=""
+            />
+
+            <img
+              src="./img/photos/concerts/concert-02/IMG_8873_cropped.jpg"
+              alt=""
+            />
+
+            <img src="./img/photos/concerts/concert-03/IMG_7196.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="gallery desktop-gallery-2">
+          <div class="gallery-m">
+            <img
+              src="./img/photos//concerts/concert-01/IMG_9454_cropped.jpg"
+              alt=""
+            />
+
+            <img
+              src="./img/photos/concerts/JOUR_1/JOUR_1-99_cropped.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="gallery-s">
+            <img
+              src="./img/photos/concerts/caleborate/Caleborate_09_04_19025.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="gallery-s">
+            <img src="./img/photos/concerts/concert-03/IMG_7196.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="v-scrolltarget" id="vst-3">
+        <div class="gallery-header">
+          <h2>Self Portriture</h2>
+        </div>
+
+        <div class="gallery mobile-gallery-3">
+          <div class="gallery-w">
+            <img src="./img/photos/self portrait/pic_1.jpg" alt="" />
+          </div>
+          <div class="gallery-s">
+            <img src="./img/photos/self portrait/pic_2.jpg" alt="" />
+            <img src="./img/photos/self portrait/pic_3.jpg" alt="" />
+            <img src="./img/photos/self portrait/pic_4_cropped.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="gallery desktop-gallery-3">
+          <div class="gallery-w">
+            <img src="./img/photos/self portrait/pic_1.jpg" alt="" />
+          </div>
+          <div class="gallery-s">
+            <img src="./img/photos/self portrait/pic_2.jpg" alt="" />
+            <img src="./img/photos/self portrait/pic_3.jpg" alt="" />
+          </div>
+          <div class="gallery-w">
+            <img src="./img/photos/self portrait/pic_4_cropped.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="v-scrolltarget" id="vst-4">
+        <button class="scroll-left-button no-mobile"><</button>
+
+        <div class="gallery-header">
+          <h2>Videography</h2>
+        </div>
+
+        <div class="gallery mobile-gallery-4 h-scrolltarget-mob hst-1"></div>
+        <div class="gallery desktop-gallery-4 h-scrolltarget-deskt hst-1"></div>
+
+        <div
+          class="gallery mobile-gallery-4 h-scrolltarget-mob hst-2"
+          style="background: var(--accent-color)"
+        ></div>
+        <div
+          class="gallery desktop-gallery-4 h-scrolltarget-deskt hst-2"
+          style="background: var(--accent-color)"
+        ></div>
+        <button class="scroll-right-button no-mobile">></button>
+      </div>
+    </main>
+    <!--
+      ********************************
+      * PAGE MAIN END
+      ********************************
+    -->
+
+    <!--
+      ********************************
+      * PAGE FOOTER START
+      ********************************
+    -->
+    <footer>
+      <div id="action-btn">
+        <button class="mdc-fab inline-demo-fab mdc-ripple-upgraded">
+          <div class="mdc-fab__ripple"></div>
+
+          <i aria-hidden="true" class="material-icons mdc-fab__icon"
+            ><!---->add<!----></i
+          >
+        </button>
+      </div>
+
+      <div id="social-icons" class="hidden">
+        <span class="facebook">
+          <a href="">
+            <img src="./img/social-icons/facebook.png" alt="" class="fadeout" />
+          </a>
+        </span>
+        <span class="twitter">
+          <a href="">
+            <img src="./img/social-icons/twitter.png" alt="" class="fadeout" />
+          </a>
+        </span>
+        <span class="instagram">
+          <a href="">
+            <img
+              src="./img/social-icons/instagram.png"
+              alt=""
+              class="fadeout"
+            />
+          </a>
+        </span>
+      </div>
+    </footer>
+    <!--
+      ********************************
+      * PAGE FOOTER END
+      ********************************
+    -->
+
     <script src="./js/page-header.js"></script>
+
+    <script type="module" src="./js/verticalScroll.js"></script>
+    <script type="module" src="./js/horizontalScroll.js"></script>
+    <script type="module" src="./js/actionbtn.js"></script>
   </body>
 </html>
