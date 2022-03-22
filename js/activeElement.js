@@ -9,13 +9,14 @@ class ActiveElement {
     instance = this;
 
     this.el = null;
-    this.onChange = (el) => {};
+    this.onChange = (element, oldElement) => {};
   }
 
   setElement(el) {
     if (this.el !== el) {
+      const oldElement = this.el;
       this.el = el;
-      this.onChange(el);
+      this.onChange(el, oldElement);
     }
   }
 

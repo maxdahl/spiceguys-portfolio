@@ -18,10 +18,21 @@ function onWindowResize() {
   }
 }
 
-function onActiveElementChange() {
-  lastTargetNum = 1;
-  for (let i = lastTargetNum; i < targets.length; i++) {
-    targets[i].classList.toggle("hidden");
+function onActiveElementChange(newElement, oldElement) {
+  if (!oldElement) {
+    //can only happen on page load
+    for (let i = lastTargetNum; i < targets.length; i++) {
+      targets[i].classList.toggle("hidden");
+    }
+  } else {
+    oldElement
+      .querySelector(`${scrollTargetSelector}.hst-${lastTargetNum}`)
+      ?.classList.toggle("hidden");
+
+    newElement
+      .querySelector(`${scrollTargetSelector}.hst-${lastTargetNum}`)
+      ?.classList.toggle("hidden");
+    lastTargetNum = 1;
   }
 }
 
@@ -37,6 +48,7 @@ function scrollHorizontal(e) {
   const currentTarget = activeElement
     .getElement()
     .querySelector(`${scrollTargetSelector}.hst-${lastTargetNum}`);
+
   if (!currentTarget) return;
 
   // scroll left, deltaY is used by the mouse scroll wheel, thats why we use it
@@ -49,7 +61,7 @@ function scrollHorizontal(e) {
   const target = activeElement
     .getElement()
     .querySelector(`${scrollTargetSelector}.hst-${lastTargetNum}`);
-
+  console.log(currentTarget, target);
   currentTarget.classList.toggle("hidden");
   target.classList.toggle("hidden");
 }

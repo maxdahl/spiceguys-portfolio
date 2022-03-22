@@ -1,6 +1,7 @@
 import touchHandler from "./touchHandler.js";
 import activeElement from "./activeElement.js";
 
+let isScrolling = false;
 let lastTargetNum = 1;
 const targets = document.querySelectorAll(".v-scrolltarget");
 
@@ -12,7 +13,9 @@ for (let i = lastTargetNum; i < targets.length; i++) {
 
 function scrollVert(e) {
   e.preventDefault();
+  if (isScrolling) return false;
 
+  isScrolling = true;
   const currentTarget = document.querySelector(`#vst-${lastTargetNum}`);
   if (!currentTarget) return;
 
@@ -29,6 +32,7 @@ function scrollVert(e) {
   target.classList.toggle("hidden");
 
   activeElement.setElement(target);
+  setTimeout(() => (isScrolling = false), 300);
 }
 
 function scrollWithKey(e) {
