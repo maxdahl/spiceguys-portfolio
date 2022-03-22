@@ -9,6 +9,9 @@
     <link rel="stylesheet" type="text/css" href="css/layout.css"></style>
     <link rel="stylesheet" type="text/css" href="css/projectpagetemplate.css"></style>
 </head>
+
+
+
 <body>
     <div class="heroimage-container">  <img class="heroimage" src="images/dummypic.jpg" />  </div>
     <div class="like-button-box"> IMAGE OF A HEART BUTTON </div>
@@ -17,15 +20,17 @@
     </p>
     <div class="project-page-grid">
         <div class="ppg-pic1"> <img src="images/dummypic.jpg" /></div>
-        <div class="ppg-pic2"> <img  src="images/dummypic.jpg" /></div>
+        <div class="ppg-pic2"> <img src="images/dummypic.jpg" /></div>
         <div class="ppg-pic3"> <img src="images/dummypic.jpg" /></div>
-        <div class="ppg-pic4"> <img  src="images/dummypic.jpg" /></div>
+        <div class="ppg-pic4"> <img src="images/dummypic.jpg" /></div>
         <div class="ppg-pic5"> <img src="images/dummypic.jpg" /></div>
         <div class="ppg-pic6"> <img src="images/dummypic.jpg" /></div>
         <div class="ppg-pic7"> <img src="images/dummypic.jpg" /></div>
         <div class="ppg-pic8"> <img src="images/dummypic.jpg" /></div>
-        <div class="ppg-pic9"> <img  src="images/dummypic.jpg" /></div>
-        <!-- <img class="ppg-pic1" src="images/dummypic.jpg">
+        <div class="ppg-pic9"> <img src="images/dummypic.jpg" /></div>
+        <div class="ppg-pic10"> <img src="images/dummypic.jpg" /></div>
+        <!-- alternatively: images without div containers: (had problemns fitting them into the grid)
+        <img class="ppg-pic1" src="images/dummypic.jpg">
         <img class="ppg-pic6" src="images/dummypic.jpg" />
         <img class="ppg-pic7" src="images/dummypic.jpg" />
         <img class="ppg-pic8" src="images/dummypic.jpg" />
@@ -33,20 +38,27 @@
         <img class="ppg-pic10" src="images/dummypic.jpg" /> -->
     </div>
     <div class="show-gallery-button-box"> <button onclick="turnOnOverlay()">Show Gallery</button> </div>
+    <!-- alternatively: use a button from MATERIAL package. https://material.io/components/buttons/web
+    Installed package.
+    Nothing imported so far.
+    Commented out dependency in package.json -->
+
     <div id="overlay"></div>
     <h1 class="project-page-heading1">Portriture - Rico</h1>
     <h2 class="project-page-heading2">Portriture - Rico</h2>
     <p class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
     <div class="project-page-bottom-gallery-container">
-        <div class="ppg-bottom-pic-container"></div>
-            <img class="ppg-pic10" href="images/dummypic.jpg" />
-            <img class="ppg-pic11" href="images/dummypic.jpg" />
-            <img class="ppg-pic12" href="images/dummypic.jpg" />
-            <img class="ppg-pic13" href="images/dummypic.jpg" />
-            <img class="ppg-pic14" href="images/dummypic.jpg" />
-            <img class="ppg-pic15" href="images/dummypic.jpg" />
+        <!-- <div class="ppg-bottom-pic-container"></div> -->
+        <div class=""> <img src="images/dummypic.jpg" /></div>
+        <div class=""> <img src="images/dummypic.jpg" /></div>
+        <div class=""> <img src="images/dummypic.jpg" /></div>
+        <div class=""> <img src="images/dummypic.jpg" /></div> 
     </div>
+
+
+
+    
     <div class="footer"></div>
 
     <script>
@@ -59,14 +71,5 @@
     </script>
     
 </body>
-
-<!-- TO DO
-
-CSS for the overlay!
-
-How do I refer to the image folder correctly?
-
-Add Content for the Overlay -->
-
 
 </html>
