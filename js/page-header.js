@@ -15,3 +15,11 @@ burgerMenu.addEventListener("click", (event) => {
     document.querySelector("main").style.display = "block";
   }
 });
+
+const submenus = document.querySelectorAll("nav .submenu > span");
+for (let menu of submenus) {
+  menu.onclick = () => {
+    menu.parentElement.classList.toggle("collapsed");
+    menu.parentElement.classList.toggle("expanded");
+  };
+}

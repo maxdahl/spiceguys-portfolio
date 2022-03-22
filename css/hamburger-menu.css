@@ -7,10 +7,14 @@ nav {
   right: 0;
   left: 0;
   display: none;
-
   /* we add display: flex with javascript */
   justify-content: center;
   align-items: center;
+}
+
+nav,
+nav a {
+  color: #fff;
 }
 
 nav > div {
@@ -26,7 +30,20 @@ nav ul {
   list-style-type: none;
 }
 
-nav .submenu span::after {
+nav li.submenu.collapsed > ul {
+  display: none;
+}
+
+nav li.submenu.collapsed > span::after {
+  position: relative;
+  top: 9px;
+  color: var(--accent-color);
   content: "ˇ";
-  margin-top: 5px;
+}
+
+nav li.submenu.expanded > span::after {
+  position: relative;
+  top: 9px;
+  color: var(--accent-color);
+  content: "ˆ";
 }
