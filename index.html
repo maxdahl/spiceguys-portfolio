@@ -40,12 +40,27 @@
         <div>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li>
+
+            <li class="submenu collapsed">
               <span>Projects</span>
+
               <ul>
-                <li><a href="">Project 1</a></li>
-                <li><a href="">Project 2</a></li>
-                <li><a href="">Project 3</a></li>
+                <li class="submenu collapsed">
+                  <span>Portriture</span>
+                  <ul>
+                    <li><a href="">Red Hair Guy</a></li>
+                  </ul>
+                </li>
+
+                <li class="submenu collapsed">
+                  <span>Concert Photography</span>
+                </li>
+
+                <li><a href="">Self Portraits</a></li>
+
+                <li class="submenu collapsed">
+                  <span>Videography</span>
+                </li>
               </ul>
             </li>
             <li><a href="about.html">About</a></li>
@@ -208,15 +223,11 @@
       </div>
 
       <div class="v-scrolltarget" id="vst-2">
-
         <div class="gallery-header">
           <h2>Concert Photography</h2>
         </div>
 
-
-
         <div class="gallery mobile-gallery-2">
-
           <div class="gallery-w">
             <img
               src="./img/photos//concerts/concert-01/IMG_9454_cropped.jpg"
@@ -248,8 +259,6 @@
             <img src="./img/photos/concerts/concert-03/IMG_7196.jpg" alt="" />
           </div>
         </div>
-
-
 
         <div class="gallery desktop-gallery-2">
           <div class="gallery-m">
@@ -315,7 +324,6 @@
         <div class="gallery desktop-gallery-4"></div>
       </div>
       <button class="scroll-right-button no-mobile">></button>
-
     </main>
 
     <!--
@@ -327,6 +335,5 @@
 
     <script type="module" src="./js/verticalScroll.js"></script>
     <script type="module" src="./js/horizontalScroll.js"></script>
-
   </body>
 </html>

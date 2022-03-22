@@ -7,9 +7,19 @@ burgerMenu.addEventListener("click", (event) => {
 
   if (menuOpen) {
     document.querySelector("header").style.position = "relative";
-    document.querySelector("nav").style.display = "block";
+    document.querySelector("nav").style.display = "flex";
+    document.querySelector("main").style.display = "none";
   } else {
-    document.querySelector("header").style.position = "static";
+    document.querySelector("header").style.position = "fixed";
     document.querySelector("nav").style.display = "none";
+    document.querySelector("main").style.display = "block";
   }
 });
+
+const submenus = document.querySelectorAll("nav .submenu > span");
+for (let menu of submenus) {
+  menu.onclick = () => {
+    menu.parentElement.classList.toggle("collapsed");
+    menu.parentElement.classList.toggle("expanded");
+  };
+}

@@ -1,14 +1,20 @@
 nav {
   position: absolute;
   background: var(--bg-color);
-  height: 100vh;
+  height: calc(100vh - 80px);
   z-index: 2;
   top: 80px;
   right: 0;
   left: 0;
-  opacity: 1;
-  overflow: visible;
   display: none;
+  /* we add display: flex with javascript */
+  justify-content: center;
+  align-items: center;
+}
+
+nav,
+nav a {
+  color: #fff;
 }
 
 nav > div {
@@ -16,8 +22,28 @@ nav > div {
   width: 70%;
   height: 70%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul {
   list-style-type: none;
+}
+
+nav li.submenu.collapsed > ul {
+  display: none;
+}
+
+nav li.submenu.collapsed > span::after {
+  position: relative;
+  top: 9px;
+  color: var(--accent-color);
+  content: "ˇ";
+}
+
+nav li.submenu.expanded > span::after {
+  position: relative;
+  top: 9px;
+  color: var(--accent-color);
+  content: "ˆ";
 }
