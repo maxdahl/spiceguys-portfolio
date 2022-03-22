@@ -61,7 +61,7 @@ function scrollHorizontal(e) {
   const target = activeElement
     .getElement()
     .querySelector(`${scrollTargetSelector}.hst-${lastTargetNum}`);
-  console.log(currentTarget, target);
+
   currentTarget.classList.toggle("hidden");
   target.classList.toggle("hidden");
 }
