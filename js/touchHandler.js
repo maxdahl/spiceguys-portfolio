@@ -1,7 +1,7 @@
 let instance;
 
 class TouchHandler {
-  constructor() {
+  constructor(element = "body") {
     if (instance) {
       throw new Error("You can only create one instance!");
     }
@@ -16,13 +16,17 @@ class TouchHandler {
       d: new Set(),
     };
 
-    window.addEventListener("touchstart", this.onTouch, {
-      passive: false,
-    });
-    window.addEventListener("touchmove", this.onTouch, {
-      passive: false,
-    });
-    window.addEventListener("touchend", this.onTouch, {
+    document
+      .querySelector(element)
+      .addEventListener("touchstart", this.onTouch, {
+        passive: false,
+      });
+    document
+      .querySelector(element)
+      .addEventListener("touchmove", this.onTouch, {
+        passive: false,
+      });
+    document.querySelector(element).addEventListener("touchend", this.onTouch, {
       passive: false,
     });
   }
@@ -101,5 +105,5 @@ class TouchHandler {
   }
 }
 
-const touchHandler = Object.freeze(new TouchHandler());
+const touchHandler = Object.freeze(new TouchHandler("main"));
 export default touchHandler;

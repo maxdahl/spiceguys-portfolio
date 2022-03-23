@@ -1,7 +1,5 @@
 let menuOpen = false;
-
-const burgerMenu = document.querySelector("#nav-icon");
-burgerMenu.addEventListener("click", (event) => {
+function toggleMenu() {
   menuOpen = !menuOpen;
   burgerMenu.classList.toggle("menu-open");
 
@@ -14,12 +12,24 @@ burgerMenu.addEventListener("click", (event) => {
     document.querySelector("nav").style.display = "none";
     document.querySelector("main").style.display = "block";
   }
+}
+
+const burgerMenu = document.querySelector("#nav-icon");
+burgerMenu.addEventListener("click", toggleMenu);
+
+// slideup/slidedown
+const submenus = document.querySelectorAll(".submenu span");
+submenus.forEach((el) => {
+  el.onclick = function (e) {
+    submenu = el.parentElement.querySelector("ul");
+    console.log(el);
+    submenu.classList.toggle("collapsed");
+    submenu.classList.toggle("expanded");
+  };
 });
 
-const submenus = document.querySelectorAll("nav .submenu > span");
-for (let menu of submenus) {
-  menu.onclick = () => {
-    menu.parentElement.classList.toggle("collapsed");
-    menu.parentElement.classList.toggle("expanded");
-  };
-}
+document.querySelector("nav").onclick = function (e) {
+  if (e.path[0].tagName === "NAV") {
+    toggleMenu();
+  }
+};

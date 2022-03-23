@@ -15,6 +15,7 @@ nav {
 nav,
 nav a {
   color: #fff;
+  text-decoration: none;
 }
 
 nav > div {
@@ -24,24 +25,51 @@ nav > div {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
+}
+
+nav > div * {
+  max-height: 100%;
+}
+
+nav > div > ul {
+  width: 80%;
 }
 
 nav ul {
   list-style-type: none;
+  height: auto;
+  transition: all 0.5s ease-in-out;
 }
 
-nav li.submenu.collapsed > ul {
-  display: none;
+nav ul li span:hover,
+nav a:hover {
+  cursor: pointer;
+  color: var(--accent-color);
 }
 
-nav li.submenu.collapsed > span::after {
+nav .collapsed,
+nav .expanded {
+  max-height: 0;
+  overflow-y: hidden;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  -moz-transition: max-height 0.5s ease-in-out;
+  -o-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+}
+
+nav .expanded {
+  max-height: 100vh;
+}
+
+nav .collapsed > span::after {
   position: relative;
   top: 9px;
   color: var(--accent-color);
   content: "ˇ";
 }
 
-nav li.submenu.expanded > span::after {
+nav .expanded > span::after {
   position: relative;
   top: 9px;
   color: var(--accent-color);
