@@ -92,6 +92,10 @@ footer {
   top: -45px;
 }
 
+label {
+  padding-left: 12px;
+}
+
 li {
   list-style: none;
 }
