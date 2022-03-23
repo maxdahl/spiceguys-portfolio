@@ -43,12 +43,12 @@ a {
 
 h1 {
   font-family: "WorkSans";
-  line-height: 10px;
+  /* line-height: 10px; */
 }
 
 h2 {
   font-family: "Lora";
-  line-height: 20px;
+  /* line-height: 20px; */
 }
 
 p {

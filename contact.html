@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 650px;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+    <link rel="stylesheet" href="./css/page-header.css" />
+    <link rel="stylesheet" href="./css/hamburger-menu.css" />
+    <link rel="stylesheet" href="./css/actionbtn.css" />
+
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--
+      ********************************
+      * PAGE HEADER START
+      ********************************
+    -->
+    <header>
+      <div id="systembar"></div>
+      <div id="header-menu">
+        <div id="nav-icon" class="icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div id="title">
+          <h1>Maxim Adejumo</h1>
+        </div>
+
+        <div id="contact-link">
+          <a href="contact.html">contact</a>
+        </div>
+      </div>
+
+      <nav>
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+
+            <li class="submenu">
+              <span>Projects</span>
+
+              <ul class="collapsed">
+                <li class="submenu">
+                  <span>Portriture</span>
+                  <ul class="collapsed">
+                    <li>
+                      <a href="projects/red-hair-guy.html">Red Hair Guy</a>
+                    </li>
+                    <li><a href="">Charlotte and Marie</a></li>
+                    <li><a href="">Clau</a></li>
+                    <li><a href="">Gen and Dan</a></li>
+                    <li><a href="">Generva</a></li>
+                    <li><a href="">Hugh</a></li>
+                    <li><a href="">Izzy</a></li>
+                    <li><a href="">Lisa and Tao</a></li>
+                    <li><a href="">Louis</a></li>
+                    <li><a href="">Marie</a></li>
+                    <li><a href="">Perla and Malina</a></li>
+                    <li><a href="">Sophia</a></li>
+
+                    <!-- <li>
+                      <a href="projects/red-hair-guy.html">Red Hair Guy</a>
+                    </li>
+                    <li><a href="">Charlotte and Marie</a></li>
+                    <li><a href="">Clau</a></li>
+                    <li><a href="">Gen and Dan</a></li>
+                    <li><a href="">Generva</a></li>
+                    <li><a href="">Hugh</a></li>
+                    <li><a href="">Izzy</a></li>
+                    <li><a href="">Lisa and Tao</a></li>
+                    <li><a href="">Louis</a></li>
+                    <li><a href="">Marie</a></li>
+                    <li><a href="">Perla and Malina</a></li>
+                    <li><a href="">Sophia</a></li> -->
+                  </ul>
+                </li>
+
+                <li class="submenu">
+                  <span>Concert Photography</span>
+                </li>
+
+                <li><a href="">Self Portraits</a></li>
+
+                <li class="submenu">
+                  <span>Videography</span>
+                </li>
+              </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--
+      ********************************
+      * PAGE HEADER END
+      ********************************
+    -->
+
+    <!--
+      ********************************
+      * PAGE MAIN START
+      ********************************
+    -->
+    <main>
+      <div class="row">
+        <div class="column" id="left">
+          <h1 class="info">Contact Info</h1>
+        </div>
+        <div class="column" id="right" style="background-color: #242526">
+          <div id="contact-info">
+            <span>Maxim.adejumo@gmail.com</span>
+            <span>+32498164235</span>
+          </div>
+          <section id="contact">
+            <form id="contactForm">
+              <div class="input-field">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" /><br />
+              </div>
+
+              <div class="input-field">
+                <label for="adress">Adress</label>
+                <input type="text" id="name" name="adress" /><br />
+              </div>
+
+              <div class="input-field">
+                <label for="email">Email</label>
+                <input type="email" id="name" name="email" /><br />
+              </div>
+
+              <div class="input-field">
+                <label for="phone">Phone</label>
+                <input type="text" id="name" name="phone" /><br />
+              </div>
+
+              <div class="input-field">
+                <label for="subject">Subject</label>
+                <input type="text" id="name" name="subject" /><br />
+              </div>
+
+              <div class="input-field message">
+                <label for="message">Message</label>
+                <textarea
+                  type="text"
+                  name="message"
+                  id="name"
+                  rows="10"
+                ></textarea>
+              </div>
+
+              <input
+                type="submit"
+                value="Submit"
+                class="submit"
+                id="submitButton"
+              />
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+    <!--
+      ********************************
+      * PAGE MAIN END
+      ********************************
+    -->
+
+    <!--
+      ********************************
+      * PAGE FOOTER START
+      ********************************
+    -->
+    <footer>
+      <div id="action-btn">
+        <button class="mdc-fab inline-demo-fab mdc-ripple-upgraded">
+          <div class="mdc-fab__ripple"></div>
+
+          <i aria-hidden="true" class="material-icons mdc-fab__icon"
+            ><!---->add<!----></i
+          >
+        </button>
+      </div>
+
+      <div id="social-icons" class="hidden">
+        <span class="facebook">
+          <a href="">
+            <img src="./img/social-icons/facebook.png" alt="" class="fadeout" />
+          </a>
+        </span>
+        <span class="twitter">
+          <a href="">
+            <img src="./img/social-icons/twitter.png" alt="" class="fadeout" />
+          </a>
+        </span>
+        <span class="instagram">
+          <a href="">
+            <img
+              src="./img/social-icons/instagram.png"
+              alt=""
+              class="fadeout"
+            />
+          </a>
+        </span>
+      </div>
+    </footer>
+    <!--
+      ********************************
+      * PAGE FOOTER END
+      ********************************
+    -->
+    <script src="./js/contact.js"></script>
+    <script src="./js/page-header.js"></script>
+    <script type="module" src="./js/actionbtn.js"></script>
+  </body>
+</html>
