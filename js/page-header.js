@@ -28,8 +28,8 @@ submenus.forEach((el) => {
   };
 });
 
-document.querySelector("nav").onclick = function (e) {
-  if (e.path[0].tagName === "NAV") {
+document.querySelector("#navigation").onclick = function (e) {
+  if (e.path[0].id === "navigation") {
     toggleMenu();
   }
 };
