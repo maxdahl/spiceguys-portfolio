@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- Compiled and minified JavaScript -->
 
     <link
@@ -21,26 +21,7 @@
       href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
       rel="stylesheet"
     />
-    <style>
-      * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-      }
 
-      .column {
-        float: left;
-        width: 50%;
-        padding: 10px;
-        height: 650px;
-      }
-
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-    </style>
     <link rel="stylesheet" href="./css/page-header.css" />
     <link rel="stylesheet" href="./css/hamburger-menu.css" />
     <link rel="stylesheet" href="./css/actionbtn.css" />
@@ -72,7 +53,7 @@
         </div>
       </div>
 
-      <nav>
+      <div id="navigation">
         <div>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -131,7 +112,7 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-      </nav>
+      </div>
     </header>
 
     <!--
@@ -148,14 +129,16 @@
     <main>
       <div class="row">
         <div class="column" id="left">
-          <h1 class="info">Contact Info</h1>
+          <!-- <h1 class="info">Contact Info</h1> -->
+          <!-- <p class="info">Maxim.adejumo@gmail.com</p>
+          <p class="info">+32498164235</p> -->
         </div>
         <div class="column" id="right" style="background-color: #242526">
-          <div id="contact-info">
-            <span>Maxim.adejumo@gmail.com</span>
-            <span>+32498164235</span>
-          </div>
           <section id="contact">
+            <div id="contact-info">
+              <span>✉ Maxim.adejumo@gmail.com</span>
+              <span>☏ +32498164235</span>
+            </div>
             <form id="contactForm">
               <div class="input-field">
                 <label for="name">Full Name</label>
@@ -188,7 +171,7 @@
                   type="text"
                   name="message"
                   id="name"
-                  rows="10"
+                  rows="6"
                 ></textarea>
               </div>
 

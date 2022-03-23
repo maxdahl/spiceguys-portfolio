@@ -26,6 +26,8 @@ body {
   padding: 0;
   background: var(--bg-color);
   font-family: "WorkSans";
+  color: #fff;
+  font-size: 16px;
 }
 
 h1,
@@ -35,10 +37,12 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
+  font-weight: revert;
 }
 
 a {
   color: var(--body-text-color);
+  text-decoration: underline;
 }
 
 h1 {

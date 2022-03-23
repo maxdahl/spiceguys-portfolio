@@ -1,7 +1,7 @@
 main {
   padding-top: 80px;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: auto; */
 }
 
 #left {
@@ -20,7 +20,12 @@ main {
 
 #contact-info {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
+}
+
+#contact-info span {
+  text-align: center;
+  color: #fff;
 }
 
 #name {
@@ -71,6 +76,12 @@ li {
   margin: -1px !important;
 }
 
+p.info {
+  color: #000;
+  background: rgba(255, 255, 255, 0.3);
+  width: 100%;
+}
+
 .button5 {
   border-radius: 50%;
   background-color: #127369;
@@ -85,10 +96,18 @@ li {
   margin-bottom: 40px;
 }
 
-.row {
-  width: 90%;
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: calc(100vh - 80px);
 }
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 #contactForm > div > label.active {
   line-height: 0.5em;
 }
@@ -109,5 +128,8 @@ li {
   }
   #left {
     height: auto;
+  }
+  main {
+    overflow: auto;
   }
 }

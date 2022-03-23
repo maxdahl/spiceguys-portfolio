@@ -5,11 +5,11 @@ function toggleMenu() {
 
   if (menuOpen) {
     document.querySelector("header").style.position = "relative";
-    document.querySelector("nav").style.display = "flex";
+    document.querySelector("#navigation").style.display = "flex";
     document.querySelector("main").style.display = "none";
   } else {
     document.querySelector("header").style.position = "fixed";
-    document.querySelector("nav").style.display = "none";
+    document.querySelector("#navigation").style.display = "none";
     document.querySelector("main").style.display = "block";
   }
 }

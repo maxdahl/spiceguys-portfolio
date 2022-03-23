@@ -1,4 +1,17 @@
-nav {
+/* revert materialize changes. fuck this shit */
+div#navigation,
+div#navigation * {
+  line-height: normal;
+  box-shadow: none;
+  -webkit-box-sizing: revert;
+  box-sizing: revert;
+}
+
+ul:not(.browser-default) {
+  padding-left: revert;
+}
+
+div#navigation {
   position: absolute;
   background: var(--bg-color);
   height: calc(100vh - 80px);
@@ -12,13 +25,13 @@ nav {
   align-items: center;
 }
 
-nav,
-nav a {
+div#navigation,
+div#navigation a {
   color: #fff;
   text-decoration: none;
 }
 
-nav > div {
+div#navigation > div {
   background: var(--bg-color-2);
   width: 70%;
   height: 70%;
@@ -28,28 +41,28 @@ nav > div {
   overflow-y: auto;
 }
 
-nav > div * {
+div#navigation > div * {
   max-height: 100%;
 }
 
-nav > div > ul {
+div#navigation > div > ul {
   width: 80%;
 }
 
-nav ul {
+div#navigation ul {
   list-style-type: none;
   height: auto;
   transition: all 0.5s ease-in-out;
 }
 
-nav ul li span:hover,
-nav a:hover {
+div#navigation ul li span:hover,
+div#navigation a:hover {
   cursor: pointer;
   color: var(--accent-color);
 }
 
-nav .collapsed,
-nav .expanded {
+div#navigation .collapsed,
+div#navigation .expanded {
   max-height: 0;
   overflow-y: hidden;
   -webkit-transition: max-height 0.5s ease-in-out;
@@ -58,18 +71,18 @@ nav .expanded {
   transition: max-height 0.5s ease-in-out;
 }
 
-nav .expanded {
+div#navigation .expanded {
   max-height: 100vh;
 }
 
-nav .collapsed > span::after {
+div#navigation .collapsed > span::after {
   position: relative;
   top: 9px;
   color: var(--accent-color);
   content: "ˇ";
 }
 
-nav .expanded > span::after {
+div#navigation .expanded > span::after {
   position: relative;
   top: 9px;
   color: var(--accent-color);
