@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=div, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"></style>
     <link rel="stylesheet" type="text/css" href="css/layout.css"></style>
     <link rel="stylesheet" type="text/css" href="css/projectpagetemplate.css"></style>
@@ -51,14 +53,28 @@
 
 
     <!-- BUTTON -->
-    <div class="show-gallery-button-box"> <button onclick="turnOnOverlay()">Show Gallery</button> </div>
+    <div class="show-gallery-button-box">
+        <button onclick="turnOnOverlay()"
+            class="mdc-button mdc-button--raised inline-demo-button mdc-ripple-upgraded"
+            style="background-color: var(--accent-color); --mdc-ripple-fg-size: 56px; --mdc-ripple-fg-scale: 1.9754770715088927; --mdc-ripple-fg-translate-start: 10.98333740234375px, -15px; --mdc-ripple-fg-translate-end: 18.98333740234375px, -10px;">
+            <span class="mdc-button__label"><!---->Open Gallery<!----></span>
+            <div class="mdc-button__ripple"></div>
+        </button>
+    </div>
     <!-- alternatively: use a button from MATERIAL package. https://material.io/components/buttons/web
     Installed package.
     Nothing imported so far.
     Commented out dependency in package.json -->
 
     <!-- OVERLAY -->
-    <div id="overlayOverProjectViewPage"><img id="pictureInSliderGalleryProjectPage" src="" alt="A Picture in a Slider Gallery"></div>
+    <div id="overlayOverProjectViewPage">
+        <img id="pictureInSliderGalleryProjectPage" src="" alt="A Picture in a Slider Gallery">
+        <div id="slideLeftDiv" onclick="slideLeft()"></div>
+        <div id="slideRightDiv" onclick="slideRight()"></div>
+        <div class="closeIconContainer">
+            <img id="closeIcon" src="img/close_black_48dp.svg" onclick="turnOffOverlay()">
+        </div>
+    </div> 
 
 
     <!-- TEXT SECTION 1 -->
@@ -81,13 +97,6 @@
     <!-- FOOTER -->
     <div class="footer"></div>
 
-
-    <script>
-        function turnOnOverlay() {
-    document.getElementById("overlayOverProjectViewPage").style.display = "block";    
-}
-    </script>
-    
 </body>
 
 </html>

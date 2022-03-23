@@ -19,6 +19,8 @@ function turnOffOverlay() {
 
 // APPROACH #2  FOR SLIDER
 
+
+
 // // Array with picture urls
 let pictures = [
     "./img/photos/portraet/perla_malina/Perla-malina_shoot-283_tif_cropped.jpg",
@@ -29,45 +31,26 @@ let numberOfCurrentImageForSlider = 0;
 
 
 
-
-// Set img.src to url taken from array
-
+// Set img.src to url taken from array  (starting value)
 document.getElementById('pictureInSliderGalleryProjectPage').src = pictures[numberOfCurrentImageForSlider];
 
 
-// CREATE SLIDE BUTTONS
-
-//  no icon - just a transparent div across half the screen?
-
-//  button +    padding - half of the screen?
-
-
-// overlay?
-//     z-layer 3
-//     position: fixed- overlay?
 
 
 
-
-// CREATE EXIT BUTTON
-
-// CREATE SLIDE FUNCTIONALITY
-
-
-
-
-//change image number by clicking / sliding
-
-// IF RIGHT SLIDE      INCOMPLETE
-
-// if (numberOfCurrentImageForSlider < pictures.length - 1){
-//     numberOfCurrentImageForSlider++;
-// }
-
-// IF LEFT SLIDE       INCOMPLETE
-// if (numberOfCurrentImageForSlider > 0){
-//     numberOfCurrentImageForSlider--;
-// }
+// change image number by clicking / sliding
+function slideRight() {
+    if (numberOfCurrentImageForSlider < pictures.length - 1){
+        numberOfCurrentImageForSlider++;    
+        document.getElementById('pictureInSliderGalleryProjectPage').src = pictures[numberOfCurrentImageForSlider];
+    }
+}
+function slideLeft() {
+    if (numberOfCurrentImageForSlider > 0){
+        numberOfCurrentImageForSlider--;
+        document.getElementById('pictureInSliderGalleryProjectPage').src = pictures[numberOfCurrentImageForSlider];
+    }
+}
 
 
 

@@ -120,14 +120,15 @@ img {
     grid-row-end: ;
 }
 
-.show-gallery-button-box{
+.show-gallery-button-box {
     display: flex;
     justify-content: center;
 }
-.show-gallery-button-box p {
-    padding: 1em, 2em;
-    border: 1px solid black;
+.show-gallery-button-box button {
     margin: 1em;
+    background-color: var(--accent-color);
+    font-family: "Roboto";
+    color:   var(--body-text-color);     
 }
 
 #overlayOverProjectViewPage {
@@ -143,3 +144,59 @@ img {
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
   }
+
+
+#slideRightDiv {
+    position: fixed; /* Sit on top of the page content */
+    width: 20%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 80%;
+    right: 0;
+    bottom: 0;
+    background-color: transparent; /* Black background with opacity */
+    z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+#slideRightDiv:hover {
+    background-color: rgba(0,0,0,0.3); /* Black background with opacity */
+}
+
+
+
+#slideLeftDiv {
+    position: fixed; /* Sit on top of the page content */
+    width: 20%;
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 80%;
+    bottom: 0;
+    z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+#slideLeftDiv:hover {
+    background-color: rgba(0,0,0,0.3); /* Black background with opacity */
+}
+
+
+.closeIconContainer {    
+    position: fixed; /* Sit on top of the page content */
+    width: max(6vh, 60px);
+    height: max(6vh, 60px); 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+.closeIconContainer:hover {
+    background-color: rgba(0,0,0,0.3); /* Black background with opacity */
+}
+
+#closeIcon {
+    width: 100%;
+    height: 100%;
+    opacity: 10%;
+}
