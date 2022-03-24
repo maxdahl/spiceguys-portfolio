@@ -1,11 +1,13 @@
-main{
+main {
   padding-top: 80px;
 }
 
-h1, h2{
-margin: 0;
-padding: 0;
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
 }
+
 .aboutMaxim {
   height: calc(100vh - 80px);
   margin-left: 100px;
@@ -18,7 +20,7 @@ padding: 0;
   margin-right: 100px;
   margin-top: 1rem;
 }
-.aboutMaximText{
+.aboutMaximText {
   display: flex;
   align-items: center;
 }
@@ -53,7 +55,7 @@ h2 {
   margin-left: 20vw;
 }
 
-#vst-2{
+#vst-2 {
   margin-top: 80px;
 }
 
@@ -67,7 +69,7 @@ img.big {
   -webkit-filter: grayscale(20%);
   -moz-filter: grayscale(20%);
 }
-img.big:hover{
+img.big:hover {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
@@ -86,14 +88,15 @@ img.small {
   -moz-filter: grayscale(20%);
 }
 
-img.small:hover{
+img.small:hover {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
   transform: scale(1.1);
   transition: transform 330ms ease-in-out;
   -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);}
+  -moz-transform: scale(1.1);
+}
 
 /*.mdc-button {
   background-color: #127369 !important;
@@ -101,31 +104,7 @@ img.small:hover{
   border-radius: 5px;
   margin: auto;
 }*/
-.contactbutton{
-margin: auto;
-background-color: transparent;
-color: whitesmoke;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-font-size: 16px;
-padding: 10px 58px;
-border: 2px solid #127369;
-box-sizing: border-box;
-border-radius: 5px;
-}
-
-.contactbutton:hover{
-  background-color: #127369;
-}
-.aboutButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.longlostbutton{
+.contactbutton {
   margin: auto;
   background-color: transparent;
   color: whitesmoke;
@@ -138,56 +117,103 @@ border-radius: 5px;
   border: 2px solid #127369;
   box-sizing: border-box;
   border-radius: 5px;
-  }
-  
-  .longlostbutton:hover{
-    background-color: #127369;
-  }
-  .llpbutton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .longlostgraphic{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    /* transform: scale(.6);
-    transform: translateY(-5px);
-    transform: translateX(5px); */
-  }
-  .longlostgraphic:hover{
-   /*  padding-bottom: 30px;
-    transition: padding 1s;
-    transition: transform 1s ease-in-out */
-  }
-
-  #llpimg{
-    width: 40%;
-    position: relative;
-    top:0;
-    transition: top 1s, transform 1s;
-  }
-  #llpimg:hover{
-    top:-80px;
-  }
-
-video {
-margin-left: 50vw;
-transform: translate(-50%);
-margin-top: 4rem;
 }
 
+.contactbutton:hover {
+  background-color: #127369;
+}
+.aboutButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-@media screen and (max-width:1000px){
-  h1 { font-size: 3em;}
-  h2 { font-size: 2em; }
-  p { font-size: 1em; }
+.longlostbutton {
+  margin: auto;
+  background-color: transparent;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 16px;
+  padding: 10px 58px;
+  border: 2px solid #127369;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
 
-  @media screen and (max-width:600px){
-    h1 { font-size: 3em;}
-    h2 { font-size: 2em; }
-    p { font-size: 12px; }
+.longlostbutton:hover {
+  background-color: #127369;
+}
+.llpbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    /* Hover Animations */
+.longlostgraphic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: scale(.6);
+    transform: translateY(-5px);
+    transform: translateX(5px); */
+}
+.longlostgraphic:hover {
+  /*  padding-bottom: 30px;
+    transition: padding 1s;
+    transition: transform 1s ease-in-out */
+}
+
+#llpimg {
+  width: 40%;
+  position: relative;
+  top: 0;
+  transition: top 1s, transform 1s;
+}
+#llpimg:hover {
+  top: -80px;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-left: 50vw;
+  transform: translate(-50%);
+  margin-top: 4rem;
+  height: 100vh;
+  z-index: -1;
+}
+
+.aboutMaxim h2 {
+  margin-top: 20px;
+}
+.aboutMaxim h1 {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 10px;
+  }
+}
