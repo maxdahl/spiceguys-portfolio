@@ -37,33 +37,61 @@
         </div>
 
         <div id="contact-link">
-          <a href="#">contact</a>
+          <a href="contact.html">contact</a>
         </div>
       </div>
 
-      <nav>
+      <div id="navigation">
         <div>
           <ul>
             <li><a href="index.html">Home</a></li>
 
-            <li class="submenu collapsed">
+            <li class="submenu">
               <span>Projects</span>
 
-              <ul>
-                <li class="submenu collapsed">
+              <ul class="collapsed">
+                <li class="submenu">
                   <span>Portriture</span>
-                  <ul>
-                    <li><a href="">Red Hair Guy</a></li>
+                  <ul class="collapsed">
+                    <li>
+                      <a href="projects/red-hair-guy.html">Red Hair Guy</a>
+                    </li>
+                    <li><a href="">Charlotte and Marie</a></li>
+                    <li><a href="">Clau</a></li>
+                    <li><a href="">Gen and Dan</a></li>
+                    <li><a href="">Generva</a></li>
+                    <li><a href="">Hugh</a></li>
+                    <li><a href="">Izzy</a></li>
+                    <li><a href="">Lisa and Tao</a></li>
+                    <li><a href="">Louis</a></li>
+                    <li><a href="">Marie</a></li>
+                    <li><a href="">Perla and Malina</a></li>
+                    <li><a href="">Sophia</a></li>
+
+                    <!-- <li>
+                    <a href="projects/red-hair-guy.html">Red Hair Guy</a>
+                  </li>
+                  <li><a href="">Charlotte and Marie</a></li>
+                  <li><a href="">Clau</a></li>
+                  <li><a href="">Gen and Dan</a></li>
+                  <li><a href="">Generva</a></li>
+                  <li><a href="">Hugh</a></li>
+                  <li><a href="">Izzy</a></li>
+                  <li><a href="">Lisa and Tao</a></li>
+                  <li><a href="">Louis</a></li>
+                  <li><a href="">Marie</a></li>
+                  <li><a href="">Perla and Malina</a></li>
+                  <li><a href="">Sophia</a></li> -->
                   </ul>
                 </li>
 
-                <li class="submenu collapsed">
+                <li class="submenu">
                   <span>Concert Photography</span>
                 </li>
 
                 <li><a href="">Self Portraits</a></li>
 
-                <li class="submenu collapsed">
+                <li class="submenu">
                   <span>Videography</span>
                 </li>
               </ul>
@@ -72,13 +100,14 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-      </nav>
+      </div>
     </header>
+
     <!--
-        ********************************
-        * PAGE HEADER END
-        ********************************
-      -->
+    ********************************
+    * PAGE HEADER END
+    ********************************
+  -->
     <main>
       <div class="v-scrolltarget" id="vst-1">
         <section class="aboutMaxim">
@@ -162,7 +191,7 @@
       </div>
 
       <div class="v-scrolltarget" id="vst-4">
-        <button class="scroll-left-button no-mobile">></button>
+        <button class="scroll-left-button no-mobile"><span></span></button>
         <section class="videoLLP h-scrolltarget-mob h-scrolltarget-deskt hst-1">
           <video width="720px" height="480px" controls>
             <source
@@ -177,7 +206,7 @@
           </video>
         </section>
         <section class="videoLLP h-scrolltarget-mob h-scrolltarget-deskt hst-2">
-          <video width="720px" height="480px" controls>
+          <video width="100%" controls>
             <source
               src="./Videos/'Textures' Official Music Video - Blancothewiz.mp4"
               type="video/mp4"
@@ -189,7 +218,7 @@
             Your browser does not support the video tag.
           </video>
         </section>
-        <button class="scroll-right-button no-mobile">></button>
+        <button class="scroll-right-button no-mobile"><span></span></button>
       </div>
     </main>
     <script src="./js/verticalScroll.js" type="module"></script>

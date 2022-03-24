@@ -1,17 +1,22 @@
 main{
   padding-top: 80px;
 }
+
+h1, h2{
+margin: 0;
+padding: 0;
+}
 .aboutMaxim {
-  height: 90vh;
+  height: calc(100vh - 80px);
   margin-left: 100px;
   margin-right: 100px;
 }
 
 .aboutLLP {
-  height: 50vh;
+  height: calc(100vh - 80px);
   margin-left: 100px;
   margin-right: 100px;
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 .aboutMaximText{
   display: flex;
@@ -43,9 +48,13 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 25px;
+  gap: 15px;
   width: 60vw;
   margin-left: 20vw;
+}
+
+#vst-2{
+  margin-top: 80px;
 }
 
 img.big {
@@ -54,37 +63,131 @@ img.big {
   object-fit: cover;
   width: 100%;
   height: auto;
+  filter: grayscale(20%);
+  -webkit-filter: grayscale(20%);
+  -moz-filter: grayscale(20%);
+}
+img.big:hover{
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  transform: scale(1.1);
+  transition: transform 330ms ease-in-out;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
 }
 
 img.small {
   object-fit: cover;
   width: 100%;
   height: auto;
+  filter: grayscale(20%);
+  -webkit-filter: grayscale(20%);
+  -moz-filter: grayscale(20%);
 }
 
-.mdc-button {
+img.small:hover{
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  transform: scale(1.1);
+  transition: transform 330ms ease-in-out;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);}
+
+/*.mdc-button {
   background-color: #127369 !important;
+  padding: 20px 58px !important;
+  border-radius: 5px;
+  margin: auto;
+}*/
+.contactbutton{
+margin: auto;
+background-color: transparent;
+color: whitesmoke;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+font-size: 16px;
+padding: 10px 58px;
+border: 2px solid #127369;
+box-sizing: border-box;
+border-radius: 5px;
+}
+
+.contactbutton:hover{
+  background-color: #127369;
 }
 .aboutButton {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
 }
+
+.longlostbutton{
+  margin: auto;
+  background-color: transparent;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 16px;
+  padding: 10px 58px;
+  border: 2px solid #127369;
+  box-sizing: border-box;
+  border-radius: 5px;
+  }
+  
+  .longlostbutton:hover{
+    background-color: #127369;
+  }
+  .llpbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .longlostgraphic{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* transform: scale(.6);
+    transform: translateY(-5px);
+    transform: translateX(5px); */
+  }
+  .longlostgraphic:hover{
+   /*  padding-bottom: 30px;
+    transition: padding 1s;
+    transition: transform 1s ease-in-out */
+  }
+
+  #llpimg{
+    width: 40%;
+    position: relative;
+    top:0;
+    transition: top 1s, transform 1s;
+  }
+  #llpimg:hover{
+    top:-80px;
+  }
+
 video {
-  margin-left: 50vw;
-  transform: translate(-50%);
-  margin-top: 4rem;
+margin-left: 50vw;
+transform: translate(-50%);
+margin-top: 4rem;
 }
+
 
 @media screen and (max-width:1000px){
   h1 { font-size: 3em;}
   h2 { font-size: 2em; }
   p { font-size: 1em; }
-}
 
   @media screen and (max-width:600px){
     h1 { font-size: 3em;}
     h2 { font-size: 2em; }
     p { font-size: 12px; }
-  }
+
+    /* Hover Animations */
