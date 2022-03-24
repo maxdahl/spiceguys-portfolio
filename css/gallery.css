@@ -86,6 +86,10 @@ main {
   animation: fadein 700ms ease-out;
 }
 
+video {
+  width: 100%;
+}
+
 /***********
 * MOBILE *
 ***********/
