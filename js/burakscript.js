@@ -13,9 +13,9 @@ window.onload = function(){
         document.querySelector('.content').className = "content";
         // hide pre-content
         document.querySelector('.pre-content').className += " hidden";
-    }, 2800);
+    }, 1800);
 
     setTimeout(() => {
         document.getElementById('pictureAde').style.display='none';
-    }, 2400);
+    }, 1400);
 }

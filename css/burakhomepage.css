@@ -37,14 +37,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    transition: 3s ease all;
+    transition: 2s ease all;
     padding: 0 10px;
     
 }
 
 .text-container h1 {
     font-size: 100px;
-    transition: 3s ease all;
+    transition: 2s ease all;
     text-decoration: none;
 }
 
@@ -73,7 +73,7 @@ div#pictureAde {
     background-repeat: no-repeat;
     position: absolute;
     top: 420px;
-    animation: fadeOut ease 3s;
+    animation: fadeOut ease 2s;
 }
 
 @keyframes fadeOut {
@@ -99,7 +99,7 @@ div#pictureAde {
 
 
 .content {
-    transition: 3s ease all;
+    transition: 2s ease all;
 }
 
 .content.hidden .scroll-left-button, .content.hidden .scroll-right-button{
