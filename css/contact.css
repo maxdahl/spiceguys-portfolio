@@ -1,0 +1,134 @@
+main {
+  padding-top: 80px;
+  height: 100vh;
+  /* overflow: auto; */
+}
+
+#left {
+  padding: 30px;
+  background-image: url(../img/contactpage_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+
+#right {
+  padding: 15px;
+}
+
+#contact-info {
+  display: grid;
+}
+
+#contact-info span {
+  text-align: center;
+  color: #fff;
+}
+
+#name {
+  background-color: #18191a;
+  border: none;
+  width: 100%;
+  color: whitesmoke;
+}
+
+textarea {
+  height: auto;
+}
+
+.submit {
+  margin: auto;
+  background-color: transparent;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 16px;
+  padding: 10px 58px;
+  border: 2px solid #127369;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.submit:hover {
+  background-color: #127369;
+}
+
+#submitButton {
+  position: relative;
+  top: -45px;
+}
+
+label {
+  padding-left: 12px;
+}
+
+li {
+  list-style: none;
+}
+
+.info {
+  padding: -1px !important;
+  margin: -1px !important;
+}
+
+p.info {
+  color: #000;
+  background: rgba(255, 255, 255, 0.3);
+  width: 100%;
+}
+
+.button5 {
+  border-radius: 50%;
+  background-color: #127369;
+  color: whitesmoke;
+  margin-bottom: 40px;
+}
+
+.button5:hover {
+  border-radius: 50%;
+  background-color: rgb(37, 37, 143);
+  color: whitesmoke;
+  margin-bottom: 40px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: calc(100vh - 80px);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#contactForm > div > label.active {
+  line-height: 0.5em;
+}
+
+@media screen and (min-width: 360px) {
+  body {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  body {
+    display: flex;
+    width: 100%;
+  }
+  .column {
+    width: 100%;
+  }
+  #left {
+    height: auto;
+  }
+  main {
+    overflow: auto;
+  }
+}

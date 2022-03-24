@@ -1,6 +1,9 @@
 header {
   display: grid;
   grid-template-rows: 24px 56px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
 header #systembar {
@@ -9,17 +12,19 @@ header #systembar {
 
 header h1 {
   font-size: medium;
+  margin: 0;
 }
 
 #contact-link {
   text-align: end;
 }
 
-nav {
+#header-menu {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   padding: 0 1rem;
+  background: var(--bg-color-2);
 }
 
 #nav-icon {

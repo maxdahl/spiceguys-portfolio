@@ -1,0 +1,90 @@
+/* revert materialize changes. fuck this shit */
+div#navigation,
+div#navigation * {
+  line-height: normal;
+  box-shadow: none;
+  -webkit-box-sizing: revert;
+  box-sizing: revert;
+}
+
+ul:not(.browser-default) {
+  padding-left: revert;
+}
+
+div#navigation {
+  position: absolute;
+  background: var(--bg-color);
+  height: calc(100vh - 80px);
+  z-index: 2;
+  top: 80px;
+  right: 0;
+  left: 0;
+  display: none;
+  /* we add display: flex with javascript */
+  justify-content: center;
+  align-items: center;
+}
+
+div#navigation,
+div#navigation a {
+  color: #fff;
+  text-decoration: none;
+}
+
+div#navigation > div {
+  background: var(--bg-color-2);
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+div#navigation > div * {
+  max-height: 100%;
+}
+
+div#navigation > div > ul {
+  width: 80%;
+}
+
+div#navigation ul {
+  list-style-type: none;
+  height: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+div#navigation ul li span:hover,
+div#navigation a:hover {
+  cursor: pointer;
+  color: var(--accent-color);
+}
+
+div#navigation .collapsed,
+div#navigation .expanded {
+  max-height: 0;
+  overflow-y: hidden;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  -moz-transition: max-height 0.5s ease-in-out;
+  -o-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+}
+
+div#navigation .expanded {
+  max-height: 100vh;
+}
+
+div#navigation .collapsed > span::after {
+  position: relative;
+  top: 9px;
+  color: var(--accent-color);
+  content: "ˇ";
+}
+
+div#navigation .expanded > span::after {
+  position: relative;
+  top: 9px;
+  color: var(--accent-color);
+  content: "ˆ";
+}
