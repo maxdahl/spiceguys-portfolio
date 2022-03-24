@@ -93,15 +93,25 @@
               have a question for me, don`t hesitate to get in touch.
             </p>
           </div>
+          <div class="aboutButton">
+            <button
+              onclick="window.location.href='contact.html';"
+              class="contactbutton"
+            >
+              Get in touch
+            </button>
+          </div>
+          <!-- 
+          <div class="aboutButton">
+            <button class="mdc-button mdc-button--raised">
+              <span class="mdc-button__label">Contained Button</span>
+            </button>
+          </div>
+          -->
         </section>
       </div>
 
       <div class="v-scrolltarget" id="vst-2">
-        <div class="aboutButton">
-          <button class="mdc-button mdc-button--raised">
-            <span class="mdc-button__label">Contained Button</span>
-          </button>
-        </div>
         <section class="imgMaxim">
           <img
             class="big"
@@ -137,12 +147,23 @@
             past projects. If you`d like to collaborate or simply have a
             question for me, don`t hesitate to get in touch.
           </p>
+          <div class="llpButton">
+            <button
+              onclick="window.location.href='https://www.instagram.com/longlostprojects/';"
+              class="longlostbutton"
+            >
+              Check our work
+            </button>
+          </div>
+          <div class="longlostgraphic longlostanimation" id="llpimg">
+            <img src="./Graphic/LLP.png" />
+          </div>
         </section>
       </div>
 
       <div class="v-scrolltarget" id="vst-4">
         <button class="scroll-left-button no-mobile">></button>
-        <section class="videoLLP h-scrolltarget-deskt h-scrolltarget-mob hst-1">
+        <section class="videoLLP h-scrolltarget-mob h-scrolltarget-deskt hst-1">
           <video width="720px" height="480px" controls>
             <source
               src="./Videos/Ms.Savannah (feat. Mathil, Blancothewiz) [Offical Music Video].mp4"
@@ -155,8 +176,7 @@
             Your browser does not support the video tag.
           </video>
         </section>
-
-        <section class="videoLLP h-scrolltarget-deskt h-scrolltarget-mob hst-2">
+        <section class="videoLLP h-scrolltarget-mob h-scrolltarget-deskt hst-2">
           <video width="720px" height="480px" controls>
             <source
               src="./Videos/'Textures' Official Music Video - Blancothewiz.mp4"
@@ -174,5 +194,6 @@
     </main>
     <script src="./js/verticalScroll.js" type="module"></script>
     <script src="./js/horizontalScroll.js" type="module"></script>
+    <script src="./js/llpgraphic.js"></script>
   </body>
 </html>
