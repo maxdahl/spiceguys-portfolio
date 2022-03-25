@@ -46,6 +46,15 @@ img {
   margin: 10px, 5vw;
 }
 
+#favourite {
+  color: rgb(197, 20, 20);
+  font-size: 28px;
+}
+
+#favourite:hover {
+  cursor: pointer;
+}
+
 .project-page-grid {
   display: grid;
   /*grid-template-columns: 100px 100px 100px 100px; */
