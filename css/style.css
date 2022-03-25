@@ -28,10 +28,8 @@ body {
   font-family: "WorkSans";
   color: #fff;
   font-size: 16px;
+  overflow: hidden;
 }
-
-
-
 
 h1,
 h2,

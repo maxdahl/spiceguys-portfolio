@@ -1,282 +1,264 @@
+body {
+  overflow-x: hidden;
+}
+
 header {
-    z-index: 1;
+  z-index: 1;
 }
 h1 {
-    text-align: center;
+  text-align: center;
 }
 h2 {
-    text-align: center;
+  text-align: center;
 }
 p {
-    text-align: justify;
+  text-align: justify;
 }
-.heroimage{
-    width: 100vw;
-    margin-top: 80px;
+.heroimage {
+  width: 100vw;
+  margin-top: 80px;
 }
 
 h2 {
-    font-size: 1em;
-    display: none;
+  font-size: 1em;
+  display: none;
 }
 
-h1, h2, p, .like-button-box,
+h1,
+h2,
+p,
+.like-button-box,
 .project-page-grid,
 .show-gallery-button-box {
-    margin: 5vw 5vw;
-    /* border: 5px solid white; */
+  margin: 5vw 5vw;
+  /* border: 5px solid white; */
 }
-
 
 img {
-    max-width: 100%;
-    height: 100%;
+  max-width: 100%;
+  height: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
 .like-button-box {
-    display: flex;
-    justify-content: flex-end;
-    margin: 10px, 5vw;
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px, 5vw;
 }
 
 .project-page-grid {
+  display: grid;
+  /*grid-template-columns: 100px 100px 100px 100px; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-rows: 100px 100px 100px 100px; */
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 2px;
+}
+
+.ppg-pic1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.ppg-pic2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.ppg-pic3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.ppg-pic4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.ppg-pic5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.ppg-pic6 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.ppg-pic7 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.ppg-pic8 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.ppg-pic9 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.ppg-pic10 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+/* .ppg-pic {
+  grid-column-start: ;
+  grid-column-end: ;
+  grid-row-start: ;
+  grid-row-end: ;
+} */
+
+.show-gallery-button-box {
+  display: flex;
+  justify-content: center;
+}
+.show-gallery-button-box button {
+  margin: 1em;
+  background-color: var(--accent-color);
+  font-family: "Roboto";
+  color: var(--body-text-color);
+}
+
+#overlayOverProjectViewPage {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+#sliderPic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+}
+#pictureInSliderGalleryProjectPage {
+  width: auto;
+  height: auto;
+  justify-self: center;
+  align-self: center;
+}
+
+#slideRightDiv {
+  position: fixed; /* Sit on top of the page content */
+  width: 20%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 80%;
+  right: 0;
+  bottom: 0;
+  background-color: transparent; /* Black background with opacity */
+  z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+#slideRightDiv:hover {
+  background-color: rgba(0, 0, 0, 0.3); /* Black background with opacity */
+}
+
+#slideLeftDiv {
+  position: fixed; /* Sit on top of the page content */
+  width: 20%;
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 80%;
+  bottom: 0;
+  z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+#slideLeftDiv:hover {
+  background-color: rgba(0, 0, 0, 0.3); /* Black background with opacity */
+}
+
+.closeIconContainer {
+  position: fixed; /* Sit on top of the page content */
+  width: max(6vh, 60px);
+  height: max(6vh, 60px);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+.closeIconContainer:hover {
+  background-color: white(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+#closeIcon {
+  background-color: white; /* Black background with opacity */
+  width: 100%;
+  height: 100%;
+  opacity: 15%;
+}
+
+.project-page-bottom-gallery-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+  align-items: center;
+}
+.project-page-bottom-gallery-container img {
+  max-height: 100vh;
+  max-width: 100vw;
+  margin: 2vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .middlePart {
+    display: flex;
+  }
+
+  .project-page-grid {
     display: grid;
+    width: 50vw;
+    height: 50vw;
     /*grid-template-columns: 100px 100px 100px 100px; */
     grid-template-columns: 1fr 1fr 1fr 1fr;
     /* grid-template-rows: 100px 100px 100px 100px; */
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 2px;
-}
-
-
-
-
-
-.ppg-pic1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-.ppg-pic2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 5;
-}
-.ppg-pic3{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.ppg-pic4{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-.ppg-pic5{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 5;
-}
-.ppg-pic6{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-.ppg-pic7{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-.ppg-pic8{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 5;
-}
-.ppg-pic9{
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-.ppg-pic10{
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 5;
-}
-.ppg-pic{
-    grid-column-start: ;
-    grid-column-end: ;
-    grid-row-start: ;
-    grid-row-end: ;
-}
-
-.show-gallery-button-box {
-    display: flex;
-    justify-content: center;
-}
-.show-gallery-button-box button {
-    margin: 1em;
-    background-color: var(--accent-color);
-    font-family: "Roboto";
-    color:   var(--body-text-color);     
-}
-
-#overlayOverProjectViewPage {
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
   }
 
-
-#sliderPic {
+  .textAndGalleryButtonContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-self: center;
-    align-self: center;
+    flex-direction: column-reverse;
+    justify-content: left;
+    width: 35vw;
+  }
+
+  .show-gallery-button-box {
+  }
+
+  .textSection2Container h1 {
+    margin: 5vw 0;
+  }
+  .textSection2Container p {
+    font-size: min(16px, 1.3vw);
+    margin: 0;
+  }
 }
-#pictureInSliderGalleryProjectPage {
-    width: auto;
-    height: auto;
-    justify-self: center;
-    align-self: center;
-}
-
-#slideRightDiv {
-    position: fixed; /* Sit on top of the page content */
-    width: 20%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 80%;
-    right: 0;
-    bottom: 0;
-    background-color: transparent; /* Black background with opacity */
-    z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-}
-#slideRightDiv:hover {
-    background-color: rgba(0,0,0,0.3); /* Black background with opacity */
-}
-
-
-
-#slideLeftDiv {
-    position: fixed; /* Sit on top of the page content */
-    width: 20%;
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 80%;
-    bottom: 0;
-    z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-}
-#slideLeftDiv:hover {
-    background-color: rgba(0,0,0,0.3); /* Black background with opacity */
-}
-
-
-.closeIconContainer {    
-    position: fixed; /* Sit on top of the page content */
-    width: max(6vh, 60px);
-    height: max(6vh, 60px); 
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 4; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-}
-.closeIconContainer:hover {
-    background-color: white(0,0,0,0.5); /* Black background with opacity */
-}
-
-#closeIcon {
-    background-color: white; /* Black background with opacity */
-    width: 100%;
-    height: 100%;
-    opacity: 15%;
-}
-
-.project-page-bottom-gallery-container {
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: space-around;
-    align-items: center;
-}
-.project-page-bottom-gallery-container img {
-    max-height: 100vh;
-    max-width: 100vw;
-    margin: 2vw;
-    
-}
-
-@media only screen and (min-width: 768px) {
-
-    .middlePart {
-        display: flex;
-    }
-
-    .project-page-grid {
-        display: grid;
-        width: 50vw;
-        height: 50vw;
-        /*grid-template-columns: 100px 100px 100px 100px; */
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        /* grid-template-rows: 100px 100px 100px 100px; */
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 2px;
-    }
-
-    .textAndGalleryButtonContainer {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: left;
-        width: 35vw;
-    }
-
-    .show-gallery-button-box {
-    }
-
-
-  
-    .textSection2Container h1 {
-        margin: 5vw 0;
-    }
-    .textSection2Container p {
-        font-size: min(16px, 1.3vw);
-        margin: 0;
-    }   
-
-}
-

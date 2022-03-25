@@ -4,11 +4,11 @@ function toggleMenu() {
   burgerMenu.classList.toggle("menu-open");
 
   if (menuOpen) {
-    document.querySelector("header").style.position = "relative";
+    // document.querySelector("header").style.position = "relative";
     document.querySelector("#navigation").style.display = "flex";
     document.querySelector("main").style.display = "none";
   } else {
-    document.querySelector("header").style.position = "fixed";
+    // document.querySelector("header").style.position = "fixed";
     document.querySelector("#navigation").style.display = "none";
     document.querySelector("main").style.display = "block";
   }

@@ -28,22 +28,26 @@ h2 {
 h1 {
   text-align: center;
   font-size: 5em;
+  font-size: clamp(3rem, 5vw, 5rem);
 }
 h2 {
   text-align: center;
   font-size: 4em;
   font-family: "Lora";
+  font-size: clamp(2rem, 4vw, 4rem);
 }
 .aboutMaxim p {
   text-align: center;
   color: #b0b3b8;
   font-size: 2em;
+  font-size: clamp(1rem, 2vw, 2.5rem);
 }
 
 .aboutLLP p {
   text-align: center;
   color: #b0b3b8;
   font-size: 2em;
+  font-size: clamp(1rem, 2vw, 2.5rem);
 }
 
 .imgMaxim {
@@ -169,8 +173,8 @@ img.small:hover {
 #llpimg {
   width: 40%;
   position: relative;
-  top: 0;
   transition: top 1s, transform 1s;
+  z-index: -1;
 }
 #llpimg:hover {
   top: -80px;
