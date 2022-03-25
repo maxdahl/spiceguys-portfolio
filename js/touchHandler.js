@@ -69,8 +69,7 @@ class TouchHandler {
 
       case "touchend":
         //we assume a click and proceed with original event
-        if (instance.touchmove.x < 10 || instance.touchmove.y < 10) return true;
-
+        if (instance.touchmove.x == 0 || instance.touchmove.y == 0) return true;
         const xMovement = Math.abs(
           instance.touchmove.x - instance.touchstart.x
         );
