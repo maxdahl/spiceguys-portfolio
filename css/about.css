@@ -187,7 +187,7 @@ video {
   margin-left: 50vw;
   transform: translate(-50%);
   margin-top: 4rem;
-  height: 100vh;
+  height: calc(100vh - 80px);
   z-index: -1;
 }
 
@@ -211,13 +211,13 @@ video {
 }
 
 @media screen and (max-width: 600px) {
-  h1 {
-    font-size: 3em;
-  }
-  h2 {
-    font-size: 2em;
-  }
-  p {
-    font-size: 10px;
+  .imgMaxim {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    max-width: 50%;
+    margin-left: 25vw;
+    margin-top: 10vw;
   }
 }

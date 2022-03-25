@@ -75,13 +75,14 @@ div#pictureAde {
   position: absolute;
   top: 420px;
   animation: fadeOut ease 3s;
+  opacity: 0;
 }
 
 @keyframes fadeOut {
-  0% {
+  from {
     opacity: 1;
   }
-  100% {
+  to {
     opacity: 0;
   }
 }

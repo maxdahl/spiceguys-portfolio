@@ -87,7 +87,14 @@ main {
 }
 
 video {
-  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-left: 50vw;
+  transform: translate(-50%);
+  margin-top: 160px;
+  height: calc(100vh - 160px);
+  z-index: -1;
 }
 
 /***********
