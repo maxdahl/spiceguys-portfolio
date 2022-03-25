@@ -32,7 +32,7 @@ function scrollVert(e) {
   target.classList.toggle("hidden");
 
   activeElement.setElement(target);
-  setTimeout(() => (isScrolling = false), 300);
+  setTimeout(() => (isScrolling = false), 500);
 }
 
 function scrollWithKey(e) {
@@ -72,4 +72,4 @@ document
   .querySelector("main")
   .addEventListener("wheel", scrollVert, { passive: false });
 
-document.onkeydown = scrollWithKey;
+document.addEventListener("keydown", scrollWithKey);
