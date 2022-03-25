@@ -180,17 +180,6 @@ img.small:hover {
   top: -80px;
 }
 
-video {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin-left: 50vw;
-  transform: translate(-50%);
-  margin-top: 4rem;
-  height: calc(100vh - 80px);
-  z-index: -1;
-}
-
 .aboutMaxim h2 {
   margin-top: 20px;
 }
