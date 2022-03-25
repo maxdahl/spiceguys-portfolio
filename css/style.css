@@ -123,6 +123,7 @@ button.scroll-left-button:hover {
 
 .h-160 {
   height: calc(100vh - 160px);
+  top: 160px;
 }
 
 video {
