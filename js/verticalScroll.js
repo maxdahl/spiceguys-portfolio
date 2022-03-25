@@ -71,4 +71,5 @@ touchHandler.addEventHandler("down", (e) => {
 document
   .querySelector("main")
   .addEventListener("wheel", scrollVert, { passive: false });
-document.querySelector("main").onkeydown = scrollWithKey;
+
+document.onkeydown = scrollWithKey;
