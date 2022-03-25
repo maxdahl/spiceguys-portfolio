@@ -1,21 +1,21 @@
 let menuOpen = false;
-function toggleMenu() {
+function toggleHamburgerMenu() {
   menuOpen = !menuOpen;
   burgerMenu.classList.toggle("menu-open");
 
   if (menuOpen) {
-    document.querySelector("header").style.position = "relative";
+    // document.querySelector("header").style.position = "relative";
     document.querySelector("#navigation").style.display = "flex";
     document.querySelector("main").style.display = "none";
   } else {
-    document.querySelector("header").style.position = "fixed";
+    // document.querySelector("header").style.position = "fixed";
     document.querySelector("#navigation").style.display = "none";
     document.querySelector("main").style.display = "block";
   }
 }
 
 const burgerMenu = document.querySelector("#nav-icon");
-burgerMenu.addEventListener("click", toggleMenu);
+burgerMenu.addEventListener("click", toggleHamburgerMenu);
 
 // slideup/slidedown
 const submenus = document.querySelectorAll(".submenu span");
@@ -30,6 +30,6 @@ submenus.forEach((el) => {
 
 document.querySelector("#navigation").onclick = function (e) {
   if (e.path[0].id === "navigation") {
-    toggleMenu();
+    toggleHamburgerMenu();
   }
 };

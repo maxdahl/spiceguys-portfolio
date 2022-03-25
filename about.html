@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/page-header.css" />
     <link rel="stylesheet" href="./css/hamburger-menu.css" />
+    <link rel="stylesheet" href="./css/actionbtn.css" />
     <link rel="stylesheet" href="./css/about.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <link
       href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
   </head>
   <body>
     <!--
@@ -37,33 +39,61 @@
         </div>
 
         <div id="contact-link">
-          <a href="#">contact</a>
+          <a href="contact.html">contact</a>
         </div>
       </div>
 
-      <nav>
+      <div id="navigation">
         <div>
           <ul>
             <li><a href="index.html">Home</a></li>
 
-            <li class="submenu collapsed">
+            <li class="submenu">
               <span>Projects</span>
 
-              <ul>
-                <li class="submenu collapsed">
+              <ul class="collapsed">
+                <li class="submenu">
                   <span>Portriture</span>
-                  <ul>
-                    <li><a href="">Red Hair Guy</a></li>
+                  <ul class="collapsed">
+                    <li><a href="project.html">Marie</a></li>
+                    <li>
+                      <a href="projects/red-hair-guy.html">Red Hair Guy</a>
+                    </li>
+                    <li><a href="">Charlotte and Marie</a></li>
+                    <li><a href="">Clau</a></li>
+                    <li><a href="">Gen and Dan</a></li>
+                    <li><a href="">Generva</a></li>
+                    <li><a href="">Hugh</a></li>
+                    <li><a href="">Izzy</a></li>
+                    <li><a href="">Lisa and Tao</a></li>
+                    <li><a href="">Louis</a></li>
+                    <li><a href="">Perla and Malina</a></li>
+                    <li><a href="">Sophia</a></li>
+
+                    <!-- <li>
+                      <a href="projects/red-hair-guy.html">Red Hair Guy</a>
+                    </li>
+                    <li><a href="">Charlotte and Marie</a></li>
+                    <li><a href="">Clau</a></li>
+                    <li><a href="">Gen and Dan</a></li>
+                    <li><a href="">Generva</a></li>
+                    <li><a href="">Hugh</a></li>
+                    <li><a href="">Izzy</a></li>
+                    <li><a href="">Lisa and Tao</a></li>
+                    <li><a href="">Louis</a></li>
+                    <li><a href="">Marie</a></li>
+                    <li><a href="">Perla and Malina</a></li>
+                    <li><a href="">Sophia</a></li> -->
                   </ul>
                 </li>
 
-                <li class="submenu collapsed">
+                <li class="submenu">
                   <span>Concert Photography</span>
                 </li>
 
                 <li><a href="">Self Portraits</a></li>
 
-                <li class="submenu collapsed">
+                <li class="submenu">
                   <span>Videography</span>
                 </li>
               </ul>
@@ -72,13 +102,14 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-      </nav>
+      </div>
     </header>
+
     <!--
-        ********************************
-        * PAGE HEADER END
-        ********************************
-      -->
+    ********************************
+    * PAGE HEADER END
+    ********************************
+  -->
     <main>
       <div class="v-scrolltarget" id="vst-1">
         <section class="aboutMaxim">
@@ -93,15 +124,25 @@
               have a question for me, don`t hesitate to get in touch.
             </p>
           </div>
+          <div class="aboutButton">
+            <button
+              onclick="window.location.href='contact.html';"
+              class="contactbutton"
+            >
+              Get in touch
+            </button>
+          </div>
+          <!-- 
+          <div class="aboutButton">
+            <button class="mdc-button mdc-button--raised">
+              <span class="mdc-button__label">Contained Button</span>
+            </button>
+          </div>
+          -->
         </section>
       </div>
 
       <div class="v-scrolltarget" id="vst-2">
-        <div class="aboutButton">
-          <button class="mdc-button mdc-button--raised">
-            <span class="mdc-button__label">Contained Button</span>
-          </button>
-        </div>
         <section class="imgMaxim">
           <img
             class="big"
@@ -137,41 +178,86 @@
             past projects. If you`d like to collaborate or simply have a
             question for me, don`t hesitate to get in touch.
           </p>
+          <div class="llpButton">
+            <button
+              onclick="window.location.href='https://www.instagram.com/longlostprojects/';"
+              class="longlostbutton"
+            >
+              Check our work
+            </button>
+          </div>
+          <div class="longlostgraphic longlostanimation" id="llpimg">
+            <img src="./Graphic/LLP.png" />
+          </div>
         </section>
       </div>
 
       <div class="v-scrolltarget" id="vst-4">
-        <button class="scroll-left-button no-mobile">></button>
+        <button class="scroll-left-button no-mobile hidden">
+          <span></span>
+        </button>
         <section class="videoLLP h-scrolltarget-mob h-scrolltarget-deskt hst-1">
-          <video width="720px" height="480px" controls>
+          <video
+            poster="https://static.wixstatic.com/media/13fc9e_8dae4bebd5bc49f2968220e54c029403~mv2.jpg/v1/fill/w_720,h_1080,al_c,q_85,enc_auto/Rio-24.jpg"
+            controls
+          >
             <source
-              src="./Videos/Ms.Savannah (feat. Mathil, Blancothewiz) [Offical Music Video].mp4"
+              src="https://drive.google.com/uc?export=download&id=1J8BhviAUXpfTxe2Lf5jzYF7nCOShPvrk"
               type="video/mp4"
-            />
-            <source
-              src="https://www.youtube.com/watch?v=FjxrmCWGDE8"
-              type="video/ogg"
             />
             Your browser does not support the video tag.
           </video>
         </section>
         <section class="videoLLP h-scrolltarget-mob h-scrolltarget-deskt hst-2">
-          <video width="720px" height="480px" controls>
+          <video
+            controls
+            poster="https://www.blancothewiz.com/wp-content/uploads/2020/07/comics.jpg"
+          >
             <source
-              src="./Videos/'Textures' Official Music Video - Blancothewiz.mp4"
+              src="https://drive.google.com/uc?export=download&id=1_nwupcgiRQa5B7tGI9r1fXSbVmfncCs-"
               type="video/mp4"
-            />
-            <source
-              src="https://www.youtube.com/watch?v=FjxrmCWGDE8"
-              type="video/ogg"
             />
             Your browser does not support the video tag.
           </video>
         </section>
-        <button class="scroll-right-button no-mobile">></button>
+        <button class="scroll-right-button no-mobile"><span></span></button>
       </div>
     </main>
-    <script src="./js/verticalScroll.js" type="module"></script>
-    <script src="./js/horizontalScroll.js" type="module"></script>
+
+    <footer>
+      <div id="action-btn">
+        <button class="mdc-fab inline-demo-fab mdc-ripple-upgraded">
+          <div class="mdc-fab__ripple"></div>
+
+          <i aria-hidden="true" class="material-icons mdc-fab__icon"
+            ><!---->add<!----></i
+          >
+        </button>
+      </div>
+
+      <div id="social-icons" class="hidden">
+        <span class="facebook">
+          <a href="">
+            <img src="./img/social-icons/facebook.png" alt="" class="fadein" />
+          </a>
+        </span>
+        <span class="twitter">
+          <a href="">
+            <img src="./img/social-icons/twitter.png" alt="" class="fadein" />
+          </a>
+        </span>
+        <span class="instagram">
+          <a href="">
+            <img src="./img/social-icons/instagram.png" alt="" class="fadein" />
+          </a>
+        </span>
+      </div>
+    </footer>
+    <script src="./js/page-header.js"></script>
+
+    <script type="module" src="./js/verticalScroll.js"></script>
+    <script type="module" src="./js/horizontalScroll.js"></script>
+    <script type="module" src="./js/actionbtn.js"></script>
+    <script src="./js/llpgraphic.js"></script>
   </body>
 </html>

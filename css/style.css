@@ -28,6 +28,11 @@ body {
   font-family: "WorkSans";
   color: #fff;
   font-size: 16px;
+  overflow: hidden;
+}
+
+main {
+  min-height: 100vh;
 }
 
 h1,
@@ -66,7 +71,7 @@ p {
   width: 40px;
   text-align: center;
   opacity: 0.2;
-  z-index: 0;
+  z-index: 1;
   border: none;
   height: calc(100% - 80px);
   bottom: 0;
@@ -120,6 +125,16 @@ button.scroll-left-button:hover {
   height: calc(100vh - 160px);
 }
 
+video {
+  position: absolute;
+  top: 80px;
+  bottom: 0;
+  margin-left: 50vw;
+  transform: translate(-50%);
+  width: calc(100% - 80px);
+  height: calc(100% - 80px);
+}
+
 @keyframes fadein {
   from {
     opacity: 0;
@@ -160,6 +175,10 @@ button.scroll-left-button:hover {
 @media (max-aspect-ratio: 1/1) {
   .no-mobile {
     display: none;
+  }
+
+  video {
+    width: 100%;
   }
 }
 

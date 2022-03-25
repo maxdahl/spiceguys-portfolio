@@ -1,0 +1,109 @@
+html,
+body {
+  height: 100%;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "WorkSans";
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  div#pictureAde {
+    position: absolute;
+    top: 450px;
+  }
+}
+
+#maximAdejumo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+#maximAdejumo.doneAnimation {
+  height: calc(100% - 56px);
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transition: 2s ease all;
+  padding: 0 10px;
+}
+
+.text-container h1 {
+  font-size: 100px;
+  transition: 2s ease all;
+  text-decoration: none;
+}
+
+.text-container.smaller h1 {
+  font-size: 16px;
+}
+
+.text-container.smaller {
+  height: 56px;
+}
+
+.leftDiv,
+.centralDiv {
+  flex: 0.25;
+}
+
+.hidden {
+  display: none;
+}
+
+div#pictureAde {
+  background-image: url(../img/photos/buraksphotos/dissappearing-picture.png);
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 420px;
+  animation: fadeOut ease 3s;
+  opacity: 0;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+#pictureSection {
+  display: flex;
+  justify-content: center;
+}
+
+.pre-content {
+  text-align: center;
+  background-color: #242526;
+  height: calc(100% - 24px);
+  padding-top: 24px;
+}
+
+.content {
+  transition: 2s ease all;
+}
+
+.content.hidden .scroll-left-button,
+.content.hidden .scroll-right-button {
+  display: none;
+}
