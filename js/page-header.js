@@ -1,5 +1,5 @@
 let menuOpen = false;
-function toggleMenu() {
+function toggleHamburgerMenu() {
   menuOpen = !menuOpen;
   burgerMenu.classList.toggle("menu-open");
 
@@ -15,7 +15,7 @@ function toggleMenu() {
 }
 
 const burgerMenu = document.querySelector("#nav-icon");
-burgerMenu.addEventListener("click", toggleMenu);
+burgerMenu.addEventListener("click", toggleHamburgerMenu);
 
 // slideup/slidedown
 const submenus = document.querySelectorAll(".submenu span");
@@ -30,6 +30,6 @@ submenus.forEach((el) => {
 
 document.querySelector("#navigation").onclick = function (e) {
   if (e.path[0].id === "navigation") {
-    toggleMenu();
+    toggleHamburgerMenu();
   }
 };
