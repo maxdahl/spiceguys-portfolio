@@ -1,5 +1,5 @@
 // listen to document load event
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
   // add class to text container in order to animate a smaller motion
   const isMobile = window.innerWidth < window.innerHeight;
   if (isMobile) document.querySelector(".content").className = "content";
@@ -20,4 +20,4 @@ window.onload = function () {
       document.getElementById("pictureAde").style.display = "none";
     }, 2000);
   }
-};
+});
